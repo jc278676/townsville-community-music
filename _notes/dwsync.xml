@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="test.php" server="ditwebcns.jcu.edu.au/public_html/db/" local="130737190082705057" remote="130737190270000000" Dst="0" />
+<file name="dbconnect.php" server="ditwebcns.jcu.edu.au/public_html/db/" local="130087690840000000" remote="130738827000000000" Dst="0" />
+<file name="phone.php" server="ditwebcns.jcu.edu.au/public_html/db/" local="130087753860000000" remote="130738829430000000" Dst="0" />
+<file name="plan.html" server="ditwebcns.jcu.edu.au/public_html/db/" local="130737188383239354" remote="130738823390000000" Dst="0" />
+<file name="README.md" server="ditwebcns.jcu.edu.au/public_html/db/" local="130737188383209279" remote="130738823400000000" Dst="0" />
+<file name="report.html" server="ditwebcns.jcu.edu.au/public_html/db/" local="130737188383279315" remote="130738823400000000" Dst="0" />
+<file name="phonerecords.sqlite" server="ditwebcns.jcu.edu.au/public_html/db/" local="130094199140000000" remote="130738829390000000" Dst="0" />
+<file name="dbprocessphone.php" server="ditwebcns.jcu.edu.au/public_html/db/" local="130738826990000000" remote="130738826990000000" Dst="0" />
+<file name="dbconnectartist.php" server="ditwebcns.jcu.edu.au/public_html/db/" local="130738838663843811" remote="130738842870000000" Dst="0" />
+<file name="dbprocessartist.php" server="ditwebcns.jcu.edu.au/public_html/db/" local="130738840718258407" remote="130738842870000000" Dst="0" />
+<file name="artist.php" server="ditwebcns.jcu.edu.au/public_html/db/" local="130738842010000000" remote="130738842860000000" Dst="0" />
+<file name="artistrecords.sqlite" server="ditwebcns.jcu.edu.au/public_html/db/" local="130738833108115153" remote="130738842970000000" Dst="0" />
 </dwsync>
