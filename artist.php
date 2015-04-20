@@ -33,6 +33,14 @@ include("dbconnectartist.php")
       <label for="phone">Phone: </label>
       <input type="text" name="phone" id="phone">
     </p>
+      <p>
+      <label for="basicdescription">Basic Description: </label>
+      <input type="text" name="basicdescription" id="basicdescription">
+    </p>
+      <p>
+      <label for="fulldescription">Full Description: </label>
+      <input type="text" name="fulldescription" id="fulldescription">
+    </p>
     <p>
       <input type="submit" name="submit" id="submit" value="Insert Entry">
     </p>
@@ -54,7 +62,6 @@ foreach ($dbh->query($sql) as $row)
 ?>
 <input type="submit" name="submit" value="Update Entry" />
 <input type="submit" name="submit" value="Delete Entry" class="deleteButton">
-<input type="submit" name="submit" value="X" class="deleteButton">
 </form>
 <?php
 }
