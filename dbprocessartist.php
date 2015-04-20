@@ -7,9 +7,9 @@
 include("dbconnectartist.php");
 $debugOn = true;
 
-if ($_REQUEST['submit'] == "X")
+if ($_REQUEST['submit'] == "Delete Entry")
 {
-	$sql = "DELETE FROM people WHERE id = '$_REQUEST[id]'";
+	$sql = "DELETE FROM artist WHERE id = '$_REQUEST[id]'";
 	if ($dbh->exec($sql))
 		header("Location: artist.php"); // NOTE: This must be done before ANY html is output, which is why it's right at the top!
 /*	else
@@ -34,7 +34,7 @@ echo "</pre>";
 // execute the appropriate query based on which submit button (insert, delete or update) was clicked
 if ($_REQUEST['submit'] == "Insert Entry")
 {
-	$sql = "INSERT INTO people (name, phone) VALUES ('$_REQUEST[name]', '$_REQUEST[phone]')";
+	$sql = "INSERT INTO people (name, phone, basicdescription, fulldescription) VALUES ('$_REQUEST[name]', '$_REQUEST[phone]', '$_REQUEST[basicdescription]', '$_REQUEST[fulldescription]')";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Inserted $_REQUEST[name]";
@@ -52,7 +52,7 @@ else if ($_REQUEST['submit'] == "Delete Entry")
 }
 else if ($_REQUEST['submit'] == "Update Entry")
 {
-	$sql = "UPDATE people SET name = '$_REQUEST[name]', phone = '$_REQUEST[phone]' WHERE id = '$_REQUEST[id]'";
+	$sql = "UPDATE artist SET name = '$_REQUEST[name]', phone = '$_REQUEST[phone]', basicdescription = '$_REQUEST[basicdescription]', fulldescription = '$_REQUEST[fulldescription]' WHERE id = '$_REQUEST[id]'";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Updated $_REQUEST[name]";
@@ -67,7 +67,7 @@ echo "</strong></p>\n";
 // Basic select and display all contents from table 
 
 echo "<h2>Artist Records in Database Now</h2>\n";
-$sql = "SELECT * FROM people";
+$sql = "SELECT * FROM artist";
 $result = $dbh->query($sql);
 $resultCopy = $result;
 
@@ -89,7 +89,7 @@ if ($debugOn) {
 }
 foreach ($dbh->query($sql) as $row)
 {
-	print $row[name] .' - '. $row[phone] . "<br />\n";
+	print $row[name] .' - '. $row[phone] .' - '. $row[phone] .' - '. $row[basicdescription].' - '. $row[fulldescription]. "<br />\n";
 }
 
 // close the database connection 

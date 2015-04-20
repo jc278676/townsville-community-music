@@ -51,13 +51,14 @@ include("dbconnectartist.php")
 <h2>Current data:</h2>
 <?php
 // Display what's in the database at the moment.
-$sql = "SELECT * FROM people";
+$sql = "SELECT * FROM artist";
 foreach ($dbh->query($sql) as $row)
 {
 ?>
 <form id="deleteForm" name="deleteForm" method="post" action="dbprocessartist.php">
 <?php
-	echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='phone' value='$row[phone]' />\n";
+	echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='phone' value='$row[phone]' /><input type='text' name='basicdescription' value='$row[basicdescription]' /><input type='text' name='fulldescription' value='$row[fulldescription]' />\n";
+	
 	echo "<input type='hidden' name='id' value='$row[id]' />";
 ?>
 <input type="submit" name="submit" value="Update Entry" />
