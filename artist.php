@@ -57,7 +57,7 @@ foreach ($dbh->query($sql) as $row)
 ?>
 <form id="deleteForm" name="deleteForm" method="post" action="dbprocessartist.php">
 <?php
-	echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='phone' value='$row[phone]' /><input type='text' name='basicdescription' value='$row[basicdescription]' /><input type='text' name='fulldescription' value='$row[fulldescription]' />\n";
+	echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='phone' value='$row[phone]' /><input type='text' name='basicDescription' value='$row[basicDescription]' /><input type='text' name='fullDescription' value='$row[fullDescription]' />\n";
 	
 	echo "<input type='hidden' name='id' value='$row[id]' />";
 ?>

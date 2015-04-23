@@ -34,7 +34,7 @@ echo "</pre>";
 // execute the appropriate query based on which submit button (insert, delete or update) was clicked
 if ($_REQUEST['submit'] == "Insert Entry")
 {
-	$sql = "INSERT INTO people (name, phone, basicdescription, fulldescription) VALUES ('$_REQUEST[name]', '$_REQUEST[phone]', '$_REQUEST[basicdescription]', '$_REQUEST[fulldescription]')";
+	$sql = "INSERT INTO people (name, phone, basicdescription, fulldescription) VALUES ('$_REQUEST[name]', '$_REQUEST[phone]', '$_REQUEST[basicDescription]', '$_REQUEST[fullDescription]')";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Inserted $_REQUEST[name]";
@@ -52,7 +52,7 @@ else if ($_REQUEST['submit'] == "Delete Entry")
 }
 else if ($_REQUEST['submit'] == "Update Entry")
 {
-	$sql = "UPDATE artist SET name = '$_REQUEST[name]', phone = '$_REQUEST[phone]', basicdescription = '$_REQUEST[basicdescription]', fulldescription = '$_REQUEST[fulldescription]' WHERE id = '$_REQUEST[id]'";
+	$sql = "UPDATE artist SET name = '$_REQUEST[name]', phone = '$_REQUEST[phone]', basicDescription = '$_REQUEST[basicDescription]', fullDescription = '$_REQUEST[fullDescription]' WHERE id = '$_REQUEST[id]'";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Updated $_REQUEST[name]";
