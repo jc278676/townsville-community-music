@@ -30,16 +30,12 @@ include("dbconnectartist.php")
       <input type="text" name="name" id="name">
     </p>
     <p>
-      <label for="phone">Phone: </label>
-      <input type="text" name="phone" id="phone">
+      <label for="genre">Genre: </label>
+      <input type="text" name="genre" id="genre">
     </p>
       <p>
-      <label for="basicdescription">Basic Description: </label>
-      <input type="text" name="basicdescription" id="basicdescription">
-    </p>
-      <p>
-      <label for="fulldescription">Full Description: </label>
-      <input type="text" name="fulldescription" id="fulldescription">
+      <label for="fileName">File Name: </label>
+      <input type="text" name="fileName" id="fileName">
     </p>
     <p>
       <input type="submit" name="submit" id="submit" value="Insert Entry">
@@ -51,18 +47,22 @@ include("dbconnectartist.php")
 <h2>Current data:</h2>
 <?php
 // Display what's in the database at the moment.
-$sql = "SELECT * FROM artist";
+$sql = "SELECT * FROM artists";
 foreach ($dbh->query($sql) as $row)
 {
 ?>
 <form id="deleteForm" name="deleteForm" method="post" action="dbprocessartist.php">
+<p>
 <?php
-	echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='phone' value='$row[phone]' /><input type='text' name='basicDescription' value='$row[basicDescription]' /><input type='text' name='fullDescription' value='$row[fullDescription]' />\n";
-	
-	echo "<input type='hidden' name='id' value='$row[id]' />";
+	#echo "<p><input type='text' name='name' value='$row[name]' /> <input type='text' name='genre' value='$row[genre]' /><input type='text' name='fileName' value='$row[fileName]'/>\n";
+	echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='genre' value='$row[genre]' /> <input type='hidden' name='id' value='$row[id]' />";
+
+
 ?>
-<input type="submit" name="submit" value="Update Entry" />
-<input type="submit" name="submit" value="Delete Entry" class="deleteButton">
+<input type="submit" name="submit" value="View Details" />
+<input type="submit" name="submit" value="Update" />
+<input type="submit" name="submit" value="Delete" class="deleteButton">
+</p>
 </form>
 <?php
 }

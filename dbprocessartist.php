@@ -9,7 +9,7 @@ $debugOn = true;
 
 if ($_REQUEST['submit'] == "Delete Entry")
 {
-	$sql = "DELETE FROM artist WHERE id = '$_REQUEST[id]'";
+	$sql = "DELETE FROM artists WHERE id = '$_REQUEST[id]'";
 	if ($dbh->exec($sql))
 		header("Location: artist.php"); // NOTE: This must be done before ANY html is output, which is why it's right at the top!
 /*	else
@@ -34,7 +34,7 @@ echo "</pre>";
 // execute the appropriate query based on which submit button (insert, delete or update) was clicked
 if ($_REQUEST['submit'] == "Insert Entry")
 {
-	$sql = "INSERT INTO people (name, phone, basicdescription, fulldescription) VALUES ('$_REQUEST[name]', '$_REQUEST[phone]', '$_REQUEST[basicDescription]', '$_REQUEST[fullDescription]')";
+	$sql = "INSERT INTO artists (name, genre, fileName) VALUES ('$_REQUEST[name]', '$_REQUEST[genre]', '$_REQUEST[fileName]')";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Inserted $_REQUEST[name]";
@@ -43,7 +43,7 @@ if ($_REQUEST['submit'] == "Insert Entry")
 }
 else if ($_REQUEST['submit'] == "Delete Entry")
 {
-	$sql = "DELETE FROM people WHERE id = '$_REQUEST[id]'";
+	$sql = "DELETE FROM artists WHERE id = '$_REQUEST[id]'";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Deleted $_REQUEST[name]";
@@ -52,7 +52,7 @@ else if ($_REQUEST['submit'] == "Delete Entry")
 }
 else if ($_REQUEST['submit'] == "Update Entry")
 {
-	$sql = "UPDATE artist SET name = '$_REQUEST[name]', phone = '$_REQUEST[phone]', basicDescription = '$_REQUEST[basicDescription]', fullDescription = '$_REQUEST[fullDescription]' WHERE id = '$_REQUEST[id]'";
+	$sql = "UPDATE artists SET name = '$_REQUEST[name]', genre = '$_REQUEST[genre]', fileName = '$_REQUEST[fileName]' WHERE id = '$_REQUEST[id]'";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Updated $_REQUEST[name]";
@@ -89,7 +89,7 @@ if ($debugOn) {
 }
 foreach ($dbh->query($sql) as $row)
 {
-	print $row[name] .' - '. $row[phone] .' - '. $row[phone] .' - '. $row[basicdescription].' - '. $row[fulldescription]. "<br />\n";
+	print $row[name] .' - '. $row[genre] .' - '. $row[genre] .' - '. $row[fileName].' - '. "<br />\n";
 }
 
 // close the database connection 
