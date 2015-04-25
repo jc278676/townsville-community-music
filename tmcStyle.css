@@ -1,0 +1,32 @@
+@charset "utf-8";
+.siteCenter {
+	margin-top: 100px;
+	width: 1000px;
+	margin-left: 200px;
+	margin- right: 200px;
+	position: relative;
+	
+	text-align: center;
+	display: block;
+	background: white;
+	padding: 5px;
+
+}
+ul {
+	list-style: none;
+	
+}
+li {
+	display: inline;
+	padding: 15px;
+	font-size: 130%;
+	font-weight: bold;
+}
+.header {
+	padding-bottom: 200px;
+}
+#content {
+	padding: 20px 15px 10px 15px;
+}
+body{
+	background: blue;
