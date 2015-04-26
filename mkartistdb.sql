@@ -4,8 +4,8 @@ BEGIN TRANSACTION;
 CREATE TABLE 'artists' (
 	id INTEGER PRIMARY KEY NOT NULL, 
 	name VARCHAR(40), 
-	genre VARCHAR(20),
-	fileName VARCHAR(20)
+	genre VARCHAR(60),
+	fileName VARCHAR(60)
 	);
 INSERT INTO "artists" VALUES(NULL, 'Aviva Quartet','String Quartet', 'AVIVA_LANE500.jpg');
 
@@ -15,7 +15,7 @@ INSERT INTO "artists" VALUES(NULL ,'The Camerata Singers', 'Vocal choir', 'Camer
 
 INSERT INTO "artists" VALUES(NULL ,'The Dirty Dozen', 'Modern Jazz/Rock/Blues', 'DD600400.jpg');
 
-INSERT INTO "artists" VALUES(NULL ,'Celtic Fyre', 'Celtic Rock', '');
+INSERT INTO "artists" VALUES(NULL ,'Celtic Fyre', 'Celtic Rock', 'Celtic-Fyre-Wall-with-Fire8.jpg');
 
 INSERT INTO "artists" VALUES(NULL ,'Harbourside Duo', 'Latin/Jazz/Celtic/Classical', 'Harbourside.jpg');
 
