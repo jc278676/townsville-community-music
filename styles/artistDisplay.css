@@ -1,0 +1,36 @@
+body {
+    background-color: darkslategrey;
+    font-family: sans-serif;
+}
+h1,h2 {
+    font-family: sans-serif ;
+    text-align: center;
+}
+div {
+    margin: 2em;
+    padding: 3.5em;
+    background-color: cornflowerblue;
+    border-style: none;
+    overflow: auto;
+}
+
+p {
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+}
+
+.artistPhotoLeft, .artistPhotoRight {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    margin-bottom: 1.5em;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+.artistPhotoLeft {
+    float: left;
+}
+.artistPhotoRight {
+    float: right;
+}
