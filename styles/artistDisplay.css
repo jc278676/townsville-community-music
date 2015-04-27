@@ -34,3 +34,18 @@ p {
 .artistPhotoRight {
     float: right;
 }
+
+
+
+.artistForm {
+    align-text: center;
+}
+
+
+label {
+    float: left;
+    width: 6em;
+    text-align:
+    right;
+    margin-right: 10px;
+}
