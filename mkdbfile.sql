@@ -143,30 +143,6 @@ CREATE TABLE "people" (personId INTEGER PRIMARY KEY NOT NULL
 );
 
 INSERT INTO "people" VALUES(null
-    ,   'Susan'
-    ,   'Fraser'
-    ,   ''
-    ,   ''
-    ,   1
-);
-
-INSERT INTO "people" VALUES(null
-    ,   'Ivy'
-    ,   'Wu'
-    ,   ''
-    ,   ''
-    ,   1
-);
-
-INSERT INTO "people" VALUES(null
-    ,   'Jessica'
-    ,   'Winton'
-    ,   ''
-    ,   ''
-    ,   1
-);
-
-INSERT INTO "people" VALUES(null
     ,   'Caroline'
     ,   'Lloyd-Doolan'
     ,   '0402 255 125'
@@ -188,46 +164,6 @@ INSERT INTO "people" VALUES(null
     ,   '0421 072 625'
     ,   ''
     ,   5 
-);
-
-INSERT INTO "people" VALUES(null
-    ,   'David'
-    ,   'Roberts'
-    ,   ''
-    ,   ''
-    ,   6 
-);
-
-INSERT INTO "people" VALUES(null
-    ,   'Monica'
-    ,   'Martin'
-    ,   ''
-    ,   ''
-    ,   6 
-);
-
-INSERT INTO "people" VALUES(null
-    ,   'Judy'
-    ,   'Pomeroy'
-    ,   ''
-    ,   ''
-    ,   7 
-);
-
-INSERT INTO "people" VALUES(null
-    ,   'Kathleen'
-    ,   'Pomeroy'
-    ,   ''
-    ,   ''
-    ,   7 
-);
-
-INSERT INTO "people" VALUES(null
-    ,   'Alan'
-    ,   'Pomeroy'
-    ,   ''
-    ,   ''
-    ,   7 
 );
 
 INSERT INTO "people" VALUES(null
