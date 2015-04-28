@@ -19,22 +19,40 @@ p {
     padding-left: 2.5em;
 }
 
-.artistPhotoLeft, .artistPhotoRight {
+.artistPhotoLeft,
+.artistPhotoRight,
+.artistThumbLeft,
+.artistThumbRight {
     margin-left: 2.5em;
     margin-right: 2.5em;
     margin-bottom: 1.5em;
+}
+
+.artistPhotoLeft,
+.artistPhotoRight,
+{
     border-top-right-radius: 2em;
     border-top-left-radius: 2em;
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
 }
-.artistPhotoLeft {
+
+.artistPhotoLeft,
+.artistThumbLeft  {
     float: left;
 }
-.artistPhotoRight {
+.artistPhotoRight,
+.artistThumbRight {
     float: right;
 }
 
+div.artistList {
+    margin: none;
+    padding: none;
+    background-color: cornflowerblue;
+    border-style: none;
+    overflow: auto;
+}
 
 
 .artistForm {
