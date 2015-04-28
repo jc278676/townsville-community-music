@@ -2,11 +2,13 @@ body {
     background-color: darkslategrey;
     font-family: sans-serif;
 }
-h1,h2 {
+h1, h2 {
     font-family: sans-serif ;
     text-align: center;
 }
+
 div {
+    column-width: 60%;
     margin: 2em;
     padding: 3.5em;
     background-color: cornflowerblue;

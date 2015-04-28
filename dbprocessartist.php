@@ -4,7 +4,7 @@
    (redirect with the header method) instead of printing the results here. 
    The X option demonstrates this ("silent" delete).
 */
-include("dbconnectartist.php");
+include("dbConnect.php");
 $debugOn = true;
 
 if ($_REQUEST['submit'] == "Delete Entry")

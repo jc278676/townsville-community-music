@@ -1,5 +1,5 @@
 <?php
-include("dbconnectartist.php")
+include("dbConnect.php")
 
 ?>
 <!doctype html>
@@ -24,16 +24,17 @@ $rows= $query -> fetchAll();
 
 // Random ordering is fine for now
 shuffle($rows);
+
 foreach ($rows as $row)
 {
     echo "<div>";
     echo "<h2>$row[artistName]</h2>";
-    echo "<a href='matt_artistDisplay.php?artistId=$row[artistId]'><img src='musos/thumb$row[artistPhoto]' class='artistThumbLeft'></a>";
+    echo "<a href='artistDisplay.php?artistId=$row[artistId]'><img src='musos/thumb$row[artistPhoto]' class='artistPhotoRight'></a>";
     echo "Genre: $row[artistGenre]<br>";
     echo "<br>";
     echo "Brief (1 or 2 lines) description of this artist from the database <br>(currently does not exist in db) <br>";
     echo "<br>";
-    echo "<a href='matt_artistDisplay.php?artistId=$row[artistId]'>More about $row[artistName]</a>";
+    echo "<a href='artistDisplay.php?artistId=$row[artistId]'>More about $row[artistName]</a>";
     echo "</div>";
 }
 // close the database connection

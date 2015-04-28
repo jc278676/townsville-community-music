@@ -1,5 +1,5 @@
 <?php
-include("dbconnectartist.php")
+include("dbConnect.php")
 
 ?>
 <!doctype html>
