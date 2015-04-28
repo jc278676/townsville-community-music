@@ -27,7 +27,11 @@ foreach ($rows as $row)
 {
     echo "<div><h2>$row[artistName]</h2><img src='musos/$row[artistPhoto]' class='artistPhotoRight'><p>";
     echo str_replace("\n", "</p><p>", $row[artistText]);
+
+    echo "</p><p><a href=\"#\" onclick=\"history.go(-1)\">Go Back</a>";
+
     echo "</p>";
+
     echo "</div>";
 }
 
