@@ -37,6 +37,7 @@ foreach ($rows as $row)
     echo "<a href='artistDisplay.php?artistId=$row[artistId]'>More about $row[artistName]</a>";
     echo "</div>";
 }
+
 // close the database connection
 $dbh = null;
 ?>

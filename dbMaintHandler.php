@@ -45,7 +45,7 @@ if ($_REQUEST['submit'] == "Insert Entry")
               '$_REQUEST[artistText]')";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
-		echo "Inserted $_REQUEST[name]";
+		echo "Inserted $_REQUEST[artistName]";
 	else
 		echo "Not inserted"; // in case it didn't work - e.g. if database is not writeable
 }
@@ -54,7 +54,7 @@ else if ($_REQUEST['submit'] == "Delete")
 	$sql = "DELETE FROM artists WHERE artistId = '$_REQUEST[artistId]'";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
-		echo "Deleted $_REQUEST[name]";
+		echo "Deleted $_REQUEST[artistName]";
 	else
 		echo "Not deleted";
 }
@@ -103,7 +103,7 @@ if ($debugOn) {
 }
 foreach ($dbh->query($sql) as $row)
 {
-	print $row[name] .' - '. $row[genre] .' - '. $row[genre] .' - '. $row[fileName].' - '. "<br />\n";
+	print $row[artistName] .' - '. $row[artistGenre] .' - '. $row[artistUrl] .' - '. $row[artistPhoto].' - '. $row[artistText].' - '. "<br />\n";
 }
 
 // close the database connection 
