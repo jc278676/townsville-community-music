@@ -69,7 +69,7 @@ else if ($_REQUEST['submit'] == "Update")
             WHERE artistId = '$_REQUEST[artistId]'";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
-		echo "Updated $_REQUEST[name]";
+		echo "Updated $_REQUEST[artistName]";
 	else
 		echo "Not updated";
 }
