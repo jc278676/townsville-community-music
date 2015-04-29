@@ -69,3 +69,12 @@ label {
     right;
     margin-right: 10px;
 }
+
+.subtleSet {
+    border-radius:25px;
+    width: 30em;
+}
+
+.deleteButton {
+    color: red;
+}

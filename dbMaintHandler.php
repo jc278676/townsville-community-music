@@ -6,10 +6,13 @@
 */
 include("dbConnect.php");
 $debugOn = true;
+echo "<pre>";
+print_r($_REQUEST); // a useful debugging function to see everything in an array, best inside a <pre> element
+echo "</pre>";
 
 if ($_REQUEST['submit'] == "Delete Entry")
 {
-	$sql = "DELETE FROM artists WHERE id = '$_REQUEST[id]'";
+	$sql = "DELETE FROM artists WHERE artistId = '$_REQUEST[artistId]'";
 	if ($dbh->exec($sql))
 		header("Location: artist.php"); // NOTE: This must be done before ANY html is output, which is why it's right at the top!
 /*	else
@@ -46,18 +49,24 @@ if ($_REQUEST['submit'] == "Insert Entry")
 	else
 		echo "Not inserted"; // in case it didn't work - e.g. if database is not writeable
 }
-else if ($_REQUEST['submit'] == "Delete Entry")
+else if ($_REQUEST['submit'] == "Delete")
 {
-	$sql = "DELETE FROM artists WHERE id = '$_REQUEST[id]'";
+	$sql = "DELETE FROM artists WHERE artistId = '$_REQUEST[artistId]'";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Deleted $_REQUEST[name]";
 	else
 		echo "Not deleted";
 }
-else if ($_REQUEST['submit'] == "Update Entry")
+else if ($_REQUEST['submit'] == "Update")
 {
-	$sql = "UPDATE artists SET name = '$_REQUEST[name]', genre = '$_REQUEST[genre]', fileName = '$_REQUEST[fileName]' WHERE id = '$_REQUEST[id]'";
+	$sql = "UPDATE artists SET
+              artistName = '$_REQUEST[artistName]',
+              artistGenre = '$_REQUEST[artistGenre]',
+              artistUrl = '$_REQUEST[artistUrl]',
+              artistPhoto = '$_REQUEST[artistPhoto]',
+              artistText = '$_REQUEST[artistText]'
+            WHERE artistId = '$_REQUEST[artistId]'";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Updated $_REQUEST[name]";

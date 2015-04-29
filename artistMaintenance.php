@@ -11,15 +11,6 @@ include("dbConnect.php")
     <title>Artist List Maintenance</title>
 
     <link href="styles/artistDisplay.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-.subtleSet {
-	border-radius:25px;
-	width: 30em;
-}
-.deleteButton {
-	color: red;
-}
-</style>
 </head>
 
 <body>
@@ -65,11 +56,28 @@ foreach ($dbh->query($sql) as $row)
 <form id="deleteForm" name="deleteForm" method="post" action="dbMaintHandler.php">
 <p>
 <?php
-	echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='genre' value='$row[genre]' /> <input type='hidden' name='id' value='$row[id]' />";
+	//echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='genre' value='$row[genre]' /> <input type='hidden' name='id' value='$row[id]' />";
+    echo "<label for=\"artistName\">Name: </label>";
+    echo "<input type=\"text\" name=\"artistName\" id=\"artistName\" value=\"$row[artistName]\">";
+    echo "</p><p>";
+    echo "<label for=\"artistGenre\">Genre: </label>";
+    echo "<input type=\"text\" name=\"artistGenre\" id=\"artistGenre\" value=\"$row[artistGenre]\">";
+    echo "</p><p>";
+    echo "<label for=\"artistUrl\">Website: </label>";
+    echo "<input type=\"text\" name=\"artistUrl\" id=\"artistUrl\" value=\"$row[artistUrl]\">";
+    echo "</p><p>";
+    echo "<label for=\"artistPhoto\">File Name: </label>";
+    echo "<input type=\"text\" name=\"artistPhoto\" id=\"artistPhoto\" value=\"$row[artistPhoto]\">";
+    echo "</p><p>";
+    echo "<label for=\"artistText\">Artist Description:</label>";
+    echo "<textarea name=\"artistText\" id=\"artistText\" form=\"deleteForm\" rows=\"12\" cols=\"80\">$row[artistText]</textarea>";
+    echo "</p>";
+    echo "<input type=\"hidden\" name=\"artistId\" value=\"$row[artistId]\" />";
 ?>
 
-<br><input type="submit" name="submit" value="View Details" />
-<input type="submit" name="submit" value="Update" />
+<br>
+<input type="submit" name="submit" value="View Details">
+<input type="submit" name="submit" value="Update">
 <input type="submit" name="submit" value="Delete" class="deleteButton">
 </p>
 </form>
