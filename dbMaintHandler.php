@@ -31,9 +31,9 @@ if ($_REQUEST['submit'] == "Delete Entry")
 <h1>Results</h1>
 <?php
 echo "<h2>Form Data</h2>";
-echo "<pre>";
-print_r($_REQUEST); // a useful debugging function to see everything in an array, best inside a <pre> element
-echo "</pre>";
+//echo "<pre>";
+//print_r($_REQUEST); // a useful debugging function to see everything in an array, best inside a <pre> element
+//echo "</pre>";
 // execute the appropriate query based on which submit button (insert, delete or update) was clicked
 if ($_REQUEST['submit'] == "Insert Entry")
 {
@@ -42,21 +42,25 @@ if ($_REQUEST['submit'] == "Insert Entry")
               '$_REQUEST[artistGenre]',
               '$_REQUEST[artistUrl]',
               '$_REQUEST[artistPhoto]',
-              '$_REQUEST[artistText]')";
+              '$_REQUEST[artistText]');";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Inserted $_REQUEST[artistName]";
 	else
-		echo "Not inserted"; // in case it didn't work - e.g. if database is not writeable
+		echo "Not inserted - query failed"; // in case it didn't work - e.g. if database is not writeable
 }
 else if ($_REQUEST['submit'] == "Delete")
 {
-	$sql = "DELETE FROM artists WHERE artistId = '$_REQUEST[artistId]'";
-	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
-	if ($dbh->exec($sql))
-		echo "Deleted $_REQUEST[artistName]";
-	else
-		echo "Not deleted";
+    $sql = "DELETE FROM artists WHERE artistId = '$_REQUEST[artistId]'";
+    if ($dbh->exec($sql))
+        echo "Deleted $_REQUEST[artistName]";
+    else
+        echo "Not deleted - query failed";
+}
+else if ($_REQUEST['submit'] == "View Details")
+{
+    echo "Load artistDisplay page with artistID=$_REQUEST[artistId]";
+    header('Location: artistDisplay.php?artistId=' . $_REQUEST[artistId]);
 }
 else if ($_REQUEST['submit'] == "Update")
 {
@@ -66,12 +70,11 @@ else if ($_REQUEST['submit'] == "Update")
               artistUrl = '$_REQUEST[artistUrl]',
               artistPhoto = '$_REQUEST[artistPhoto]',
               artistText = '$_REQUEST[artistText]'
-            WHERE artistId = '$_REQUEST[artistId]'";
-	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
+            WHERE artistId = '$_REQUEST[artistId]';";
 	if ($dbh->exec($sql))
 		echo "Updated $_REQUEST[artistName]";
 	else
-		echo "Not updated";
+		echo "Not updated - query failed";
 }
 else {
 	echo "This page did not come from a valid form submission.<br />\n";

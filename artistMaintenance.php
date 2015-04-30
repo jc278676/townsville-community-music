@@ -53,9 +53,10 @@ $sql = "SELECT * FROM artists";
 foreach ($dbh->query($sql) as $row)
 {
 ?>
-<form id="deleteForm" name="deleteForm" method="post" action="dbMaintHandler.php">
-<p>
 <?php
+    $formName = "maintForm" . $row[artistId];
+    echo "<form id=$formName name=$formName method=\"post\" action=\"dbMaintHandler.php\">";
+    echo "<p>";
 	//echo "<input type='text' name='name' value='$row[name]' /> <input type='text' name='genre' value='$row[genre]' /> <input type='hidden' name='id' value='$row[id]' />";
     echo "<label for=\"artistName\">Name: </label>";
     echo "<input type=\"text\" name=\"artistName\" id=\"artistName\" value=\"$row[artistName]\">";
@@ -70,7 +71,7 @@ foreach ($dbh->query($sql) as $row)
     echo "<input type=\"text\" name=\"artistPhoto\" id=\"artistPhoto\" value=\"$row[artistPhoto]\">";
     echo "</p><p>";
     echo "<label for=\"artistText\">Artist Description:</label>";
-    echo "<textarea name=\"artistText\" id=\"artistText\" form=\"deleteForm\" rows=\"12\" cols=\"80\">$row[artistText]</textarea>";
+    echo "<textarea name=\"artistText\" id=\"artistText\" form=$formName rows=\"12\" cols=\"80\">$row[artistText]</textarea>";
     echo "</p>";
     echo "<input type=\"hidden\" name=\"artistId\" value=\"$row[artistId]\" />";
 ?>
