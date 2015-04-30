@@ -8,7 +8,7 @@ include("dbConnect.php")
 <meta charset="UTF-8">
 <title>Featured Artists</title>
 
-    <link href="styles/artistDisplay.css" rel="stylesheet" type="text/css">
+    <link href='styles/artistDisplay.css' rel='stylesheet' type='text/css'>
  </head>
 
 <body>
@@ -28,12 +28,18 @@ shuffle($rows);
 foreach ($rows as $row)
 {
     echo "<div>";
+
+    // Level 2 heading is the artist's name
     echo "<h2>$row[artistName]</h2>";
+
+    // Artist's photo is a link to the artist display page
     echo "<a href='artistDisplay.php?artistId=$row[artistId]'><img src='musos/thumb$row[artistPhoto]' class='artistPhotoRight'></a>";
     echo "Genre: $row[artistGenre]<br>";
     echo "<br>";
+    // echo "$row[artistShortText]<br>";  // when it is finally defined
     echo "Brief (1 or 2 lines) description of this artist from the database <br>(currently does not exist in db) <br>";
     echo "<br>";
+    // A link to the singlae artist display page
     echo "<a href='artistDisplay.php?artistId=$row[artistId]'>More about $row[artistName]</a>";
     echo "</div>";
 }
