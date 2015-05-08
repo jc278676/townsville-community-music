@@ -1,0 +1,28 @@
+#siteCenter
+This centers the website content into the middle of the page.
+
+.header
+This class is for the header and navigation of the main page, pretty simple
+
+# contentLeft
+Gets the main content left
+#contentRight
+The off content right, bith are straight foward
+
+#colourHeader
+The main site images and call to action
+
+#artistList
+In the content block on right side, featuring the various artists on the website.
+
+.upcomingShows
+Just a class to hold the .artistShow div
+
+.artistShow
+The class features upcoming shows and link for the tickets to purchase
+
+.featureArtist
+The selected artist that the user has choosen to view extra content.
+
+.center
+This class actually contains the information and/or feature to the call the action of the website. Example of links for upcoming shows, to become a member and so on.
