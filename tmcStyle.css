@@ -1,45 +1,153 @@
 @charset "utf-8";
 #siteCenter {
-	background: white;
-	padding: 5px;
-	overflow: hidden !important;
+	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	width: 1000px;
+	width: 1200px;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 50px;
+	font-family: arial;
 }
 div {
 	display: block;
 }
 .header ul {
+	margin-top: 0px;
 	list-style: none;
+	background: #cecece;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.header img: hover{
+	background-color: none;
+}
+.header a:hover{
+	color: #8CD8D2;
+	background: #AAAAAA;
 }
 .header li {
 	display: inline;
 	padding: 15px;
 	font-size: 150%;
 	font-weight: bold;
+} 
+.header li a {
+	color: white;
+	text-decoration: none;
 }
 .header {
-	padding-bottom: 200px;
+	margin-bottom: 350px;
 }
-#content {
-	float: right;
-	position: relative;
-	width: 800px;
-	padding-left: 50px;
-	padding-top: 20px;
-}
-body{
-	background: blue;
-}
-.artistList ul{
-	padding-top: 20px;
-	padding-right: 50px;
-	list-style: none;
+#contentLeft {
 	float: left;
-	position: absolute;
+	position: relative;
+	width: 880px;
+	margin-right: 10px;
+	paddign-bottom: 100px;
+	text-align: left;
+	border-radius: 15px;	
 }
-
+.artist {
+	float: left;
+	padding-top: 20px;
+	padding-right: 10px;
+	paddign-bottom: 100px;
+	text-align: left;
+	border-radius: 15px;
+	padding-left: 10px;
+	background: #5C5C5C;
+}
+.upcomingShows {
+	padding-top: 20px;
+	padding-left: 10px;
+	paddign-bottom: 100px;
+	text-align: left;
+	background-color: #5C5C5C;
+	border-radius: 15px;
+	position: relative;
+	height: 400px;
+	margin-bottom: 50px;
+}
+.artistShow {
+	float: left;
+	margin-left: 65px;
+	width: 200px;
+	text-align: center;
+	font-size: x-large;
+	font-weight: bolder;
+	font-style:oblique;
+	color: white;
+}
+#colourHeader{
+	height: 500px;
+	width: 100%;
+	position: absolute;
+	background: #8CD8D2;
+	margin-top: 100px;
+}
+#contentRight {
+	padding-top: 20px;
+	width: 300px;
+	background-color: #5C5C5C;
+	border-radius: 15px;
+	padding-bottom: 20px;
+	margin-left: 10px;
+	padding-left: 5 px;
+	float: left;
+	font-weight: bold;
+}
+#artistList ul {
+	list-style: none;
+	text-align: left;
+	background: #cecece;
+}
+#artistList a {
+	color: black;
+	text-decoration: none;
+}
+#artistList li:hover{
+	background: #A8C1C5;
+}
+.featureArtist {
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+}
+#contentRight h2{
+	padding-left: 10px;	
+}
+h2 {
+	text-align: left;
+	color: white;
+	font-size: 220%;
+	font-weight: bolder;
+}
+#contentRight ul{
+	padding-left: 10px;
+}
+#artistList li {
+	padding: 5px;
+}
+#footer {
+	height: 200px;
+	margin-top: 50px ;
+	background: #cecece;
+}
+.center a {
+	float: left;
+	margin-left: 200px;
+	font-weight: bolder;
+	font-size: 200%;
+	font-style: oblique;
+	width: 250px;
+	text-decoration: none;
+	color: black;
+}
+.center p a:hover{
+	padding: 0px;
+	color: #2EBC92;
+	background: #8CD8D2;
+}
+	
