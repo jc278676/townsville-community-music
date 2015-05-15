@@ -25,7 +25,7 @@ $rows= $query -> fetchAll();
 // Random ordering is fine for now
 shuffle($rows);
 
-foreach ($rows as $row)
+foreach ($rows as $ro1w)
 {
     echo "<div>";
 
