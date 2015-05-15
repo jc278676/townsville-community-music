@@ -25,4 +25,10 @@ The class features upcoming shows and link for the tickets to purchase
 The selected artist that the user has choosen to view extra content.
 
 .center
-This class actually contains the information and/or feature to the call the action of the website. Example of links for upcoming shows, to become a member and so on.
+This class actually contains the information and/or feature to the call the action of the website. Example of links for 
+upcoming shows, to become a member and so on.
+
+.currentHeaderSection
+This for the css of current page. So if you are doing the About Us page, you will take out the link code 
+(e.g. <a href="whatever">Page</a>) and add in the class="currentHeaderSection" with in the list 
+(e.g.  <li class="currentHeaderSection">)
