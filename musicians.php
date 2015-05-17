@@ -107,10 +107,10 @@ include_once("dbConnect.php");
             {
                 if ($row[artistId] != $featuredArtistId) {
                     // Level 3 heading is the artist's name
-                    echo "<li><a href='artistPage.php?artistId=$row[artistId]'>$row[artistName]</a><br>";
+                    echo "<li><a href='musicians.php?artistId=$row[artistId]'>$row[artistName]</a><br>";
 
                     // Artist's photo is a link to the artist display page
-                    echo "<a href='artistPage.php?artistId=$row[artistId]'><img src='musos/thumb$row[artistPhoto]' class='artistPhotoRight'></a></li>";
+                    echo "<a href='musicians.php?artistId=$row[artistId]'><img src='musos/thumb$row[artistPhoto]' class='artistPhotoRight'></a></li>";
 
                 }
             }
