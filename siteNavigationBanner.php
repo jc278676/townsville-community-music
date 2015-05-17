@@ -36,7 +36,7 @@
 
     <?php
     echo "<div class='center'>";
-        include("adBanner.php");
+        include("callToAction.php");
     echo "</div class='center'>";
     ?>
 

@@ -42,9 +42,9 @@ Every web page has the following structure:
     // includes which fill div elements should have the div open and close tags
     // set in the calling file.
     echo "<div class='header'>";
-        // Must specify which section we represent before including siteHeader.php
+        // Must specify which section we represent before including siteNavigationBanner.php
         $sectionName="home";
-        include_once("siteHeader.php");
+        include_once("siteNavigationBanner.php");
     echo "</div class='header'>";
     ?>
 

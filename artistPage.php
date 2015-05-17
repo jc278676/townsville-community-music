@@ -19,9 +19,9 @@ include_once("dbConnect.php");
 
     <div class="header">
         <?php
-        // Must specify which section we represent before including siteHeader.php
+        // Must specify which section we represent before including siteNavigationBanner.php
         $sectionName=musicians;
-        include_once("siteHeader.php");
+        include_once("siteNavigationBanner.php");
         ?>
 
     </div class="header">
