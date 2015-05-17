@@ -20,7 +20,7 @@ include_once("dbConnect.php");
     <div class="header">
         <?php
         // Must specify which section we represent before including siteNavigationBanner.php
-        $sectionName=musicians;
+        $sectionName="musicians";
         include_once("siteNavigationBanner.php");
         ?>
 
@@ -46,7 +46,7 @@ include_once("dbConnect.php");
 
             <div class="featureArtist">
                 <?php
-                if (is_null($_GET[artistId])) {
+                if (is_null($_GET["artistId"])) {
                     $featuredArtistId = 4;  // just for now, but eventually get a random one from the db
                                             // and maybe this is where we apply some "gamification"
                     //$query = $dbh->prepare("SELECT artistId FROM artists");
@@ -56,7 +56,7 @@ include_once("dbConnect.php");
                     //$keys = array_keys($rows);
                     //$featuredArtistId = $rows[$keys[1]];
                 } else {
-                    $featuredArtistId = $_GET[artistId];
+                    $featuredArtistId = $_GET["artistId"];
                 }
                 // TODO: this only ever returns 1 item, so get rid of the for loop
                 $query = $dbh->prepare("SELECT * FROM artists WHERE artistId = $featuredArtistId");
@@ -110,7 +110,10 @@ include_once("dbConnect.php");
                     echo "<li><a href='musicians.php?artistId=$row[artistId]'>$row[artistName]</a><br>";
 
                     // Artist's photo is a link to the artist display page
-                    echo "<a href='musicians.php?artistId=$row[artistId]'><img src='musos/thumb$row[artistPhoto]' class='artistPhotoRight'></a></li>";
+                    echo "<a href='musicians.php?artistId=$row[artistId]'><img src='musos/thumb$row[artistPhoto]' class='artistPhotoRight'></a><br>";
+
+                    //
+                    echo "$row[artistShortText]</li>";
 
                 }
             }

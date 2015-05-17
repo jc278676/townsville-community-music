@@ -12,7 +12,7 @@
         <?php
 
             $headerSections = array (
-                "home" => "Home",
+                "index" => "Home",
                 "events" => "Events",
                 "bulletinBoard" => "Bulletin Board",
                 "musicians" => "Musicians",
@@ -26,7 +26,11 @@
                 // This prevents the header from linking to the page of which it is a part
                 // while generating links to all other pages
                 if ($headerPageName != $sectionName ) {
-                    echo "<li><a href='$headerPageName.php'>$headerTitle</a></li>";
+                    if (headerPageName == "index") {
+                        echo "<li><a href='/'>Home</a></li>";
+                    } else {
+                        echo "<li><a href='$headerPageName.php'>$headerTitle</a></li>";
+                    }
                 } else {
                     echo "<li class='currentHeaderSection'>$headerTitle</li>";
                 }
