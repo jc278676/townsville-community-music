@@ -6,7 +6,7 @@
 	position: relative;
 	width: 1200px;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 10px;
 	font-family: arial;
 }
 div {
@@ -19,7 +19,7 @@ div {
 	padding-top: 50px;
 	padding-bottom: 10px;
 }
-.header img: hover{
+.header img a:hover{
 	background-color: none;
 }
 .header a:hover{
@@ -37,7 +37,7 @@ div {
 	text-decoration: none;
 }
 .header {
-	margin-bottom: 350px;
+	margin-bottom: 35px;
 }
 #contentLeft {
     padding-top: 20px;
@@ -67,7 +67,7 @@ div {
 	float: left;
 	padding-top: 20px;
 	padding-right: 10px;
-	padding-bottom: 100px;
+	/*padding-bottom: 100px;*/
 	text-align: left;
 	border-radius: 15px;
 	padding-left: 10px;
@@ -76,7 +76,7 @@ div {
 .upcomingShows {
 	padding-top: 20px;
 	padding-left: 10px;
-	padding-bottom: 100px;
+	/*padding-bottom: 100px;*/
 	text-align: left;
 	background-color: #5C5C5C;
 	border-radius: 15px;
@@ -146,7 +146,7 @@ h2 {
 	font-weight: bolder;
 	font-size: 200%;
 	font-style: oblique;
-	width: 250px;
+	/*width: 250px;*/
 	text-decoration: none;
 	color: black;
 }

@@ -24,17 +24,6 @@ include_once("dbConnect.php");
         include_once("siteHeader.php");
         ?>
 
-
-
-
-
-
-        <div class="center">
-            <?php
-            include("adBanner.php")
-            ?>
-        </div class="center">
-
     </div class="header">
 
     <div id="contentLeft">
