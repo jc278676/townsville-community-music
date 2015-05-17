@@ -3,9 +3,8 @@ echo "";
 ?>
 <div class="center">
     <p>
-        <!--
-                <a href="artistPage.html">Free listing for Music Centre members!<br>
-                    Publicise yourself, your band or organisation here!</a>
-        -->
+
+                <a href="artistPage.html">Various calls to action live here!</a>
+
     </p>
 </div>

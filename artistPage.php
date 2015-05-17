@@ -13,7 +13,7 @@ include_once("dbConnect.php");
 <body>
 
 <div id="colourHeader">
-</div>
+</div id="colourHeader">
 
 <div id="siteCenter">
 
@@ -24,16 +24,18 @@ include_once("dbConnect.php");
         include_once("siteHeader.php");
         ?>
 
-        <!--
-        <div class="center">
-            <p>
-                <a href="artistPage.html">Free listing for Music Centre members!<br>
-                    Publicise yourself, your band or organisation here!</a>
-            </p>
-        </div>
-        -->
 
-    </div>
+
+
+
+
+        <div class="center">
+            <?php
+            include("adBanner.php")
+            ?>
+        </div class="center">
+
+    </div class="header">
 
     <div id="contentLeft">
 
@@ -90,14 +92,12 @@ include_once("dbConnect.php");
 
                     // echo "</div>";
                 }
-
-                // close the database connection
                 ?>
-            </div>
+            </div class="featureArtist">
 
-        </div>
+        </div class="artist">
 
-    </div>
+    </div id="contentLeft">
  
     <div id="contentRight">
         <h2>MORE ARTISTS</h2>
@@ -125,20 +125,17 @@ include_once("dbConnect.php");
 
                 }
             }
-            echo "<ul>";
+            echo "</ul>";
             ?>
-        </div>
+        </div id="artistList">
 
-    </div>
+    </div id="contentRight">
 
-</div>
+</div id="siteCenter">
 
-<div id="footer">
-    <?php
-    // Page footer is a good place to close the db connection
-    $dbh = null;
-    ?>
-</div>
+<?php
+include("siteFooter.php");
+?>
 
 </body>
 </html>
