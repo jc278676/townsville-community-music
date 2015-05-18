@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 #siteCenter {
 	overflow: hidden;
@@ -6,7 +7,7 @@
 	position: relative;
 	width: 1200px;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 50px;
 	font-family: arial;
 }
 div {
@@ -19,7 +20,7 @@ div {
 	padding-top: 50px;
 	padding-bottom: 10px;
 }
-.header img a:hover{
+.header img: hover{
 	background-color: none;
 }
 .header a:hover{
@@ -37,63 +38,58 @@ div {
 	text-decoration: none;
 }
 .header {
-	margin-bottom: 35px;
+	margin-bottom: 350px;
+}
+.member ul{
+	float: right;
+	position: relative !important;
+	display: inline;
+	padding: 0px;
+}
+.member li{
+	display: inline;
+	padding: 0 px !important;
 }
 #contentLeft {
-    padding-top: 20px;
 	float: left;
 	position: relative;
 	width: 880px;
-    background-color: #5C5C5C;
-    border-radius: 15px;
-    padding-bottom: 100px;
-    padding-right: 5 px;
-    margin-right: 10px;
+	margin-right: 10px;
+	paddign-bottom: 100px;
 	text-align: left;
+	border-radius: 15px;	
 }
 #contentRight {
-    padding-top: 20px;
-    float: left;
-    position: relative;
-    width: 300px;
-    background-color: #5C5C5C;
-    border-radius: 15px;
-    padding-bottom: 100px;
-    padding-left: 15 px;
-    margin-left: 10px;
-    text-align: left;
+	padding-top: 20px;
+	width: 300px;
+	background-color: #5C5C5C;
+	border-radius: 15px;
+	padding-bottom: 20px;
+	margin-left: 10px;
+	padding-left: 5 px;
+	float: left;
+	font-weight: bold;
+}
+#contentRight h2{
+	padding-left: 10px;	
+}
+#contentRight ul{
+	padding-left: 10px;
+}
+#artistList li {
+	padding: 5px;
 }
 .artist {
 	float: left;
 	padding-top: 20px;
 	padding-right: 10px;
-	/*padding-bottom: 100px;*/
+	paddign-bottom: 100px;
 	text-align: left;
 	border-radius: 15px;
 	padding-left: 10px;
 	background: #5C5C5C;
 }
-.upcomingShows {
-	padding-top: 20px;
-	padding-left: 10px;
-	/*padding-bottom: 100px;*/
-	text-align: left;
-	background-color: #5C5C5C;
-	border-radius: 15px;
-	position: relative;
-	height: 400px;
-	margin-bottom: 50px;
-}
-.artistShow {
-	float: left;
-	margin-left: 65px;
-	width: 200px;
-	text-align: center;
-	font-size: x-large;
-	font-weight: bolder;
-	font-style:oblique;
-	color: white;
-}
+
 #colourHeader{
 	height: 500px;
 	width: 100%;
@@ -104,7 +100,7 @@ div {
 
 #artistList ul {
 	list-style: none;
-	text-align: center;
+	text-align: left;
 	background: #cecece;
 }
 #artistList a {
@@ -120,21 +116,14 @@ div {
 	margin-bottom: 30px;
 	border-radius: 20px;
 }
-#contentRight h2{
-	padding-left: 10px;	
-}
-h2 {
+
+h2{
 	text-align: left;
 	color: white;
 	font-size: 220%;
 	font-weight: bolder;
 }
-#contentRight ul{
-	padding-left: 10px;
-}
-#artistList li {
-	padding: 5px;
-}
+
 #footer {
 	height: 200px;
 	margin-top: 50px ;
@@ -146,7 +135,7 @@ h2 {
 	font-weight: bolder;
 	font-size: 200%;
 	font-style: oblique;
-	/*width: 250px;*/
+	width: 250px;
 	text-decoration: none;
 	color: black;
 }
@@ -155,4 +144,30 @@ h2 {
 	color: #2EBC92;
 	background: #8CD8D2;
 }
-	
+.currentHeaderSection{
+	display: inline;
+	padding: 15px;
+	font-size: 150%;
+	font-weight: bold;
+	background-color: #8CD8D2;
+	color: black;	
+}
+#content {
+	float: left;
+	padding-top: 20px;
+	padding-right: 10px;
+	paddign-bottom: 100px;
+	text-align: left;
+	border-radius: 15px;
+	padding-left: 10px;
+	background: #5C5C5C;
+}
+.event{ 
+    background-color: white;
+	padding: 10px;
+	border-radius: 20px;
+}
+.eventBorder{
+	border-top: #cecece 2px solid;
+    margin-top: 20px;
+}
