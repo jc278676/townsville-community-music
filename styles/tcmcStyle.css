@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 #siteCenter {
 	overflow: hidden;
@@ -13,17 +12,16 @@
 div {
 	display: block;
 }
+.header img{
+    margin-right: 15px;
+}
 .header ul {
 	margin-top: 0px;
 	list-style: none;
 	background: #cecece;
 	padding-top: 50px;
-	padding-bottom: 10px;
 }
-.header img: hover{
-	background-color: none;
-}
-.header a:hover{
+.header li a:hover{
 	color: #8CD8D2;
 	background: #AAAAAA;
 }
@@ -123,12 +121,6 @@ h2{
 	font-size: 220%;
 	font-weight: bolder;
 }
-
-#footer {
-	height: 200px;
-	margin-top: 50px ;
-	background: #cecece;
-}
 .center a {
 	float: left;
 	margin-left: 200px;
@@ -168,6 +160,24 @@ h2{
 	border-radius: 20px;
 }
 .eventBorder{
+    width: 1000px;
+    margin-left: 100px;
 	border-top: #cecece 2px solid;
     margin-top: 20px;
+}
+#footer {
+	height: 200px;
+	margin-top: -20px;
+	background: #cecece;
+}
+.footerContent {
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 1200px;
+    padding-top: 30px;
+}
+.sponsorImg {
+    float: right;
 }
