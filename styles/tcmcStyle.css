@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 #siteCenter {
 	overflow: hidden;
@@ -156,7 +157,7 @@ h2{
 }
 .event{ 
     background-color: white;
-	padding: 10px;
+	padding: 20px;
 	border-radius: 20px;
 }
 .eventBorder{
@@ -181,3 +182,9 @@ h2{
 .sponsorImg {
     float: right;
 }
+.information img {
+    float: left;
+    padding-right: 10px;
+}
+.information{
+    padding: 10px;
