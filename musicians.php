@@ -11,24 +11,18 @@ include_once("dbConnect.php");
 </head>
 
 <body>
-
-<div id="colourHeader">
-</div id="colourHeader">
-
+<div id="colourHeader"> </div id="colourHeader">
 <div id="siteCenter">
-
-    <div class="header">
-        <?php
+  <div class="header">
+    <?php
         // Must specify which section we represent before including siteNavigationBanner.php
         $sectionName="musicians";
         include_once("siteNavigationBanner.php");
         ?>
-
-    </div class="header">
-
-    <div id="contentLeft">
-
-        <!--
+  </div class="header">
+  <div id="contentLeft"> 
+    
+    <!--
          Probably should not come before the featured artist on the featured artist page
          Perhaps should not be on the featured artist page at all.
          Unless it is the featured artist's upcoming shows.
@@ -40,12 +34,11 @@ include_once("dbConnect.php");
             ?>
         </div>
         -->
-
-        <div class="artist">
-            <h2>FEATURED ARTIST</h2>
-
-            <div class="featureArtist">
-                <?php
+    
+    <div class="artist">
+      <h2>FEATURED ARTIST</h2>
+      <div class="featureArtist">
+        <?php
                 if (is_null($_GET["artistId"])) {
                     $featuredArtistId = 4;  // just for now, but eventually get a random one from the db
                                             // and maybe this is where we apply some "gamification"
@@ -82,17 +75,13 @@ include_once("dbConnect.php");
                     // echo "</div>";
                 }
                 ?>
-            </div class="featureArtist">
-
-        </div class="artist">
-
-    </div id="contentLeft">
- 
-    <div id="contentRight">
-        <h2>MORE ARTISTS</h2>
-
-        <div id="artistList">
-            <?php
+      </div class="featureArtist">
+    </div class="artist">
+  </div id="contentLeft">
+  <div id="contentRight">
+    <h2>MORE ARTISTS</h2>
+    <div id="artistList">
+      <?php
             // Grab our list of artists from the database
             // $query returns an array of associative arrays
             $query = $dbh->prepare('SELECT * FROM artists');
@@ -119,15 +108,11 @@ include_once("dbConnect.php");
             }
             echo "</ul>";
             ?>
-        </div id="artistList">
-
-    </div id="contentRight">
-
+    </div id="artistList">
+  </div id="contentRight">
 </div id="siteCenter">
-
 <?php
 include("siteFooter.php");
 ?>
-
 </body>
 </html>
