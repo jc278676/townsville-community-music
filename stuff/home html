@@ -6,19 +6,61 @@
 <link href="tmcStyle.css" rel="stylesheet" type="text/css">
 </head>
 
-<body><div class="siteCenter"><div class="header">
-<ul><li>Events</li>
-<li>Bulletin Board</li>
-<li>Musicians</li>
-<li>Membership</li>
-<li>About</li>
-<li>Feeder</li>
-<li>Home</li>
-</ul>
+<body>
+<div id="colourHeader">
 </div>
-<div id="content"><h1>Error HTTP 404</h1>
-<p>This maybe one information, but this is not information. It may look good or help you, but it is not information. This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.</p>
+<div id="siteCenter">
+	<div class="header">
+		<div class="member">
+        	<ul>
+            	<li><img src="buttonUp.gif" width="80" height="17" alt=""/></li>
+                <li><img src="buttonUp.gif" width="80" height="17" alt=""/></li>
+            </ul>
+        </div>
+            <ul>
+               <a href="home.html"><img src="logo.png" width="141" height="100" alt="Home"/></a>
+  			   <li class="currentHeaderSection">Home</li>
+        	   <li><a href="eventPage.html">Events</a></li>
+               <li><a href="bulletinBoardPage.html">Bulletin Board</a></li>
+			   <li><a href="artistPage.html">Musicians</a></li>
+			   <li><a href="artistPage.html">Membership</a></li>
+               <li><a href="membershipPage.html">About</a></li>
+			   <li><a href="artistPage.html">Feeder</a></li>
+		  </ul>
+		<div class="center">
+        	<p>
+            	<a href="artistPage.html">Free listing for Music Centre members!<br> Publicise yourself, your band or organisation here!</a>
+            </p>
+        </div>
+	</div>
+	<div id="content">
+        <p class="borderLine">
+            <div class="event"> 
+                <div class="upcomingShows">
+                    <h3>Upcoming Shows</h3>
+                        <div class="artistShow"><img src="AvivaTheatre200.gif" width="200" height="200" alt=""/><br><br> TICKETS</div>
+                        <div class="artistShow"><img src="AvivaTheatre200.gif" width="200" height="200" alt=""/><br><br> TICKETS</div>
+                        <div class="artistShow"><img src="AvivaTheatre200.gif" width="200" height="200" alt=""/><br><br> TICKETS</div>
+                        
+                    <br>
+                </div>
+                <p class="borderLine">
+                <div class="information">
+                    <h3>Are You New To Townsville? And Love Music</h3>
+                        You looking for some assistance on getting concerts with your band, then fill out the application form and allow us to assist you in your endeavours.   
+                   
+                </div>
+                </p>
+            </div>
+        </p>
+    </div>
 </div>
+<div id="footer">
+    <div class="footerContent">
+        <div class="sponsorImg">    
+            <img src="TCCgcbfQN100px.png" width="500" height="100" alt="sponsors"/>
+        </div>
+    </div>
 </div>
 </body>
 </html>
