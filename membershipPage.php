@@ -64,7 +64,8 @@
   <p>It      is also possible to pay online by Visa, Mastercard or PayPal<br>
     From our website - www.townsvillemusic.org.au</p>
 </div>
-	<p>Date: 
+	<h2>Membership Application Form</h2>
+<p>Date: 
 	  <input name="date" type="text" size="30" maxlength="20">
     </p>
 	<p>First Name:	
