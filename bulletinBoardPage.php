@@ -35,6 +35,8 @@
 	</div>
 	<div id="content">
         	<h2>Bulletin Board</h2>
+<p>Add a notice to the Townsville Music Center: <br> <textarea name="notice" cols="70" rows="15"></textarea> <br><input name="submit" type="button" value="submit">           
+
            	<p class="eventBorder">    
                 	<div class="event">
                 		This maybe one information, but this is not information. It may look good or help you, but it is not information. This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.This maybe one information, but this is not information. It may look good or help you, but it is not information.
