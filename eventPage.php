@@ -7,6 +7,32 @@
 </head>
 
 <body>
+<p>Email:	
+  <input name="logOnEmail" type="text" size="30" maxlength="20">
+</p>
+<p>Password:
+  <input name="logOnPassword" type="password" size="30" maxlength="20">
+</p>
+      <?php
+	  //Wrong password message
+      if (isset($_SESSION['msg'])) {
+	echo "<p style='color:red'>".$_SESSION['msg']."</p>"; 
+	//remove the message since it has been displayed.
+	unset($_SESSION['msg']);
+	}
+	?>
+    
+   	<?php
+	//logout button
+    if (isset($_SESSION['msgG'])) {
+		echo"<form>";
+		echo "<p style='color:green'>".$_SESSION['msgG']."</p>"; 
+		echo '<input type="button" name="logout" id="logout" value="Logout" onClick="location.href=\'../Scripts/Logout.php\'"/>'; 
+		echo"</form>";
+	}
+	
+?> 
+  
 <div id="colourHeader"> </div>
 <div id="siteCenter">
   <div class="header">
