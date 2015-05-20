@@ -1,34 +1,43 @@
-#siteCenter
+#siteCenter div
 This centers the website content into the middle of the page.
 
-.header
+.header div
 This class is for the header and navigation of the main page, pretty simple
 
-# contentLeft
+# contentLeft duv
 Gets the main content left
-#contentRight
+#contentRight div
 The off content right, bith are straight foward
 
-#colourHeader
+#colourHeader div
 The main site images and call to action
 
-#artistList
+#artistList div
 In the content block on right side, featuring the various artists on the website.
 
-.upcomingShows
+.upcomingShows div
 Just a class to hold the .artistShow div
 
-.artistShow
+.artistShow div
 The class features upcoming shows and link for the tickets to purchase
 
-.featureArtist
+.featureArtist div
 The selected artist that the user has choosen to view extra content.
 
-.center
+.center div
 This class actually contains the information and/or feature to the call the action of the website. Example of links for 
 upcoming shows, to become a member and so on.
 
-.currentHeaderSection
+.currentHeaderSection li
 This for the css of current page. So if you are doing the About Us page, you will take out the link code 
 (e.g. <a href="whatever">Page</a>) and add in the class="currentHeaderSection" with in the list 
 (e.g.  <li class="currentHeaderSection">)
+
+borderLine p
+Separates information with a borderline
+
+.event div
+Just a div to create an information block, name should change as it feature in all pages.
+
+.information div
+A div to put information into.
