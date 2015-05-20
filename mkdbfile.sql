@@ -136,12 +136,13 @@ DROP TABLE "members";
 CREATE TABLE "members" (memberId INTEGER PRIMARY KEY NOT NULL
     -- personClass is a value of 1, 2, or 3 for the different classes of membership 
     -- 1 for the administrator, 2 for a paid member, 3 for a registered, but unpaid member
-    ,   memberClass INTEGER 
-    ,   memberFname VARCHAR(20)
+    ,   memberClass INTEGER
+    ,   memberFname VARCHAR(20)    
     ,   memberLname VARCHAR(30)
     ,   memberPhone VARCHAR(14)
     ,   memberEmail VARCHAR(50)
-    ,   artistId
+    ,   memberPasswd VARCHAR(40)  -- a 1-way hash created by php's crypt mechanism
+    ,   artistId                  -- may be NULL if the member is not (part of) a registered artist
     ,   FOREIGN KEY(artistId) REFERENCES artists(artistId)
 );
 
@@ -152,7 +153,9 @@ INSERT INTO "members" VALUES(1
     ,   'Administrator'
     ,   ''
     ,   ''
-    ,   '0');
+    ,   ''
+    ,   NULL
+);
 
 -- 
 INSERT INTO "members" VALUES(2
@@ -161,7 +164,9 @@ INSERT INTO "members" VALUES(2
     ,   'Lloyd-Doolan'
     ,   '0402 255 125'
     ,   ''
-    ,   '1');
+    ,   ''
+    ,   '1'
+);
 
 -- 
 INSERT INTO "members" VALUES(3
@@ -170,7 +175,9 @@ INSERT INTO "members" VALUES(3
     ,   'Lehmann'
     ,   ''
     ,   'beat.lehmann@iprimus.com.au'
-    ,   '2');
+    ,   ''
+    ,   '2'
+);
 
 -- 
 INSERT INTO "members" VALUES(4
@@ -179,7 +186,9 @@ INSERT INTO "members" VALUES(4
     ,   'Hodgson'
     ,   '0421 072 625'
     ,   ''
-    ,   '5');
+    ,   ''
+    ,   '5'
+);
 
 -- 
 INSERT INTO "members" VALUES(5
@@ -188,7 +197,9 @@ INSERT INTO "members" VALUES(5
     ,   'McCluskey'
     ,   '0427 255 125'
     ,   'joannemmccluskey@gmail.com'
-    ,   '8');
+    ,   ''
+    ,   '8'
+);
 
 -- 
 INSERT INTO "members" VALUES(6
@@ -197,5 +208,52 @@ INSERT INTO "members" VALUES(6
     ,   'Nicholson'
     ,   ''
     ,   'mlg7@optusnet.com.au'
-    ,   '11');
+    ,   ''
+    ,   '11'
+);
+--
+
+
+--
+DROP TABLE "events";
+CREATE TABLE "events" (eventId INTEGER PRIMARY KEY NOT NULL
+    ,   eventTitle VARCHAR(50)
+    ,   eventDateTime VARCHAR(16) --  use strftime(, '') to convert to unix epoch time
+    ,   eventVenue VARCHAR(40)
+    ,   eventPromoPhoto VARCHAR(40)
+    ,   eventPatronBaseId NUMBER(6)   --  This is used to generate the link to the ticketsales website in
+-- this format https://au.patronbase.com/_TVCC/Seats/NumSeats?prod_id=0782&perf_id=1&section_id=M&seat_type_id=S
+    ,   eventText VARCHAR(4096) -- every entry seems to be formatted vastly differently
+                                -- perhaps just take html code here?
+    ,   memberId NOT NULL	-- the member that lodged this event record (1 is the sysadmin)
+    ,   artistId 		-- the
+    ,   FOREIGN KEY(memberId) REFERENCES members(memberId)
+    ,   FOREIGN KEY(artistId) REFERENCES artists(artistId)
+);
+
+INSERT INTO "events" VALUES(47
+    ,   'Huge Block Party'
+    ,   '2015-06-30 19:00'
+    ,   'C2 (Townsville Civic Centre)'
+    ,   'boobah.jpg'
+    ,   ''
+    ,   'Like the man said - a Huge Block Party.'
+    ,   '1'
+    ,   '1'
+);
+
+
+--
+
+
+--
+DROP TABLE "bulletins";
+CREATE TABLE "bulletins" (bulletinId INTEGER PRIMARY KEY NOT NULL
+    ,   bulletinTitle VARCHAR(50)
+    ,   bulletinText VARCHAR(4096)
+    ,   memberId NOT NULL	-- the member that lodged this bulletin record
+    ,   FOREIGN KEY(memberId) REFERENCES members(memberId)
+);
+
 COMMIT;
+
