@@ -251,7 +251,14 @@ CREATE TABLE "members" (memberId INTEGER PRIMARY KEY NOT NULL
     ,   memberClass INTEGER
     ,   memberFname VARCHAR(20)    
     ,   memberLname VARCHAR(30)
-    ,   memberPhone VARCHAR(14)
+    ,   memberPhone1 VARCHAR(14)
+    ,   memberPhone2 VARCHAR(14)
+    ,   memberPhone3 VARCHAR(14)
+    ,   memberAddressLine1 VARCHAR(80)
+    ,   memberAddressLine2 VARCHAR(80)
+    ,   memberAddressSuburb VARCHAR(30)
+    ,   memberAddressState VARCHAR(3)
+    ,   memberAddressPostcode VARCHAR(4)
     ,   memberEmail VARCHAR(50)
     ,   memberPasswd VARCHAR(40)  -- a 1-way hash created by php's crypt mechanism
     ,   artistId                  -- may be NULL if the member is not (associated with) a registered artist
@@ -266,6 +273,13 @@ INSERT INTO "members" VALUES(1
     ,   ''
     ,   ''
     ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
     ,   NULL
 );
 
@@ -275,6 +289,13 @@ INSERT INTO "members" VALUES(2
     ,   'Caroline'
     ,   'Lloyd-Doolan'
     ,   '0402 255 125'
+    ,   '0402 255 125'
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
     ,   ''
     ,   ''
     ,   '1'
@@ -285,6 +306,13 @@ INSERT INTO "members" VALUES(3
     ,   2
     ,   'Beat'
     ,   'Lehmann'
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
     ,   ''
     ,   'beat.lehmann@iprimus.com.au'
     ,   ''
@@ -297,6 +325,13 @@ INSERT INTO "members" VALUES(4
     ,   'Andi'
     ,   'Hodgson'
     ,   '0421 072 625'
+    ,   '0421 072 625'
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
     ,   ''
     ,   ''
     ,   '5'
@@ -308,6 +343,13 @@ INSERT INTO "members" VALUES(5
     ,   'Joanne'
     ,   'McCluskey'
     ,   '0427 255 125'
+    ,   '0427 255 125'
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
     ,   'joannemmccluskey@gmail.com'
     ,   ''
     ,   '8'
@@ -318,6 +360,13 @@ INSERT INTO "members" VALUES(6
     ,   3
     ,   'Les'
     ,   'Nicholson'
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
+    ,   ''
     ,   ''
     ,   'mlg7@optusnet.com.au'
     ,   ''
@@ -428,7 +477,52 @@ INSERT INTO "bulletins" VALUES(93
 INSERT INTO "bulletins" VALUES(NULL
     ,   2
     ,   'For Sale - f-holes'
-    ,   '2015-03-30'
+    ,   '2015-05-30'
+    ,   'f-hole.jpg'
+    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
+    ,   '1'
+);
+
+INSERT INTO "bulletins" VALUES(NULL
+    ,   2
+    ,   'For Sale - f-holes'
+    ,   '2015-07-30'
+    ,   'f-hole.jpg'
+    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
+    ,   '1'
+);
+
+INSERT INTO "bulletins" VALUES(NULL
+    ,   2
+    ,   'For Sale - f-holes'
+    ,   '2015-08-30'
+    ,   'f-hole.jpg'
+    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
+    ,   '1'
+);
+
+INSERT INTO "bulletins" VALUES(NULL
+    ,   2
+    ,   'For Sale - f-holes'
+    ,   '2015-09-30'
+    ,   'f-hole.jpg'
+    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
+    ,   '1'
+);
+
+INSERT INTO "bulletins" VALUES(NULL
+    ,   2
+    ,   'For Sale - f-holes'
+    ,   '2015-10-30'
+    ,   'f-hole.jpg'
+    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
+    ,   '1'
+);
+
+INSERT INTO "bulletins" VALUES(NULL
+    ,   2
+    ,   'For Sale - f-holes'
+    ,   '2015-11-30'
     ,   'f-hole.jpg'
     ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
     ,   '1'

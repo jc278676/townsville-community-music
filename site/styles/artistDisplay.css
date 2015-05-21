@@ -1,0 +1,80 @@
+body {
+    background-color: darkslategrey;
+    font-family: sans-serif;
+}
+h1, h2 {
+    font-family: sans-serif ;
+    text-align: center;
+}
+
+div {
+    column-width: 60%;
+    margin: 2em;
+    padding: 3.5em;
+    background-color: cornflowerblue;
+    border-style: none;
+    overflow: auto;
+}
+
+p {
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+}
+
+.artistPhotoLeft,
+.artistPhotoRight,
+.artistThumbLeft,
+.artistThumbRight {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.artistPhotoLeft,
+.artistPhotoRight,
+{
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.artistPhotoLeft,
+.artistThumbLeft  {
+    float: left;
+}
+.artistPhotoRight,
+.artistThumbRight {
+    float: right;
+}
+
+div.artistList {
+    margin: none;
+    padding: none;
+    background-color: cornflowerblue;
+    border-style: none;
+    overflow: auto;
+}
+
+
+.artistForm {
+    align-text: center;
+}
+
+
+label {
+    float: left;
+    width: 6em;
+    text-align:
+    right;
+    margin-right: 10px;
+}
+
+.subtleSet {
+    border-radius:25px;
+    width: 30em;
+}
+
+.deleteButton {
+    color: red;
+}
