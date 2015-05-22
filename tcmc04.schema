@@ -1,0 +1,60 @@
+CREATE TABLE "genres" (genreId INTEGER PRIMARY KEY NOT null
+    ,   genreText VARCHAR(40)
+	);
+CREATE TABLE "artistGenres" (artistGenreId INTEGER PRIMARY KEY NOT NULL
+    ,   artistId
+    ,   genreId
+    ,   FOREIGN KEY(artistId) REFERENCES artists(artistId)
+    ,   FOREIGN KEY(genreId) REFERENCES genres(genreId)
+);
+CREATE TABLE "artists" (artistId INTEGER PRIMARY KEY NOT null
+    ,   artistName VARCHAR(40)
+    ,   artistGenreText VARCHAR(60)
+    ,   artistUrl VARCHAR(80)
+    ,   artistPhoto VARCHAR(40)
+    ,   artistShortText VARCHAR(240)
+    ,   artistText VARCHAR(4096)
+	);
+CREATE TABLE "members" (memberId INTEGER PRIMARY KEY NOT NULL
+    -- personClass is a value of 1, 2, or 3 for the different classes of membership 
+    -- 1 for the administrator, 2 for a paid member, 3 for a registered, but unpaid member
+    ,   memberClass INTEGER
+    ,   memberFname VARCHAR(20)    
+    ,   memberLname VARCHAR(30)
+    ,   memberPhone1 VARCHAR(14)
+    ,   memberPhone2 VARCHAR(14)
+    ,   memberPhone3 VARCHAR(14)
+    ,   memberAddressLine1 VARCHAR(80)
+    ,   memberAddressLine2 VARCHAR(80)
+    ,   memberAddressSuburb VARCHAR(30)
+    ,   memberAddressState VARCHAR(3)
+    ,   memberAddressPostcode VARCHAR(4)
+    ,   memberEmail VARCHAR(50)
+    ,   memberPasswd VARCHAR(40)  -- a 1-way hash created by php's crypt mechanism
+    ,   artistId                  -- may be NULL if the member is not (associated with) a registered artist
+    ,   FOREIGN KEY(artistId) REFERENCES artists(artistId)
+);
+CREATE TABLE "events" (eventId INTEGER PRIMARY KEY NOT NULL
+    ,   eventTitle VARCHAR(50)
+    ,   eventDateTime VARCHAR(16) -- stored as YYYY-mm-dd HH:MM 
+    ,   eventVenue VARCHAR(40)    -- 
+    ,   eventPromoPhoto VARCHAR(40)
+    ,   eventPatronBaseId  INTEGER  --  This is used to generate the link to the ticketsales website in
+-- this format https://au.patronbase.com/_TVCC/Seats/NumSeats?prod_id=0782&perf_id=1&section_id=M&seat_type_id=S
+    ,   eventShortText VARCHAR(240)
+    ,   eventText VARCHAR(4096) -- every entry seems to be formatted vastly differently
+                                -- perhaps allow valid html code here? Wrapped in a div?
+    ,   memberId NOT NULL	-- the member that lodged this event record (1 is the sysadmin)
+    ,   artistId 		-- may be NULL if event performer is not in artists table
+    ,   FOREIGN KEY(memberId) REFERENCES members(memberId)
+    ,   FOREIGN KEY(artistId) REFERENCES artists(artistId)
+);
+CREATE TABLE "bulletins" (bulletinId INTEGER PRIMARY KEY NOT NULL
+    ,   bulletinType INTEGER -- 1 for an announcement, 2 for for sale / wanted to buy
+    ,   bulletinTitle VARCHAR(50)
+    ,   bulletinExpiryDate VARCHAR(10)  -- Automatically set with date('now', '+2 months') when inserted 
+    ,   bulletinImage VARCHAR(40)
+    ,   bulletinText VARCHAR(4096)
+    ,   memberId NOT NULL	-- the member that lodged this bulletin record
+    ,   FOREIGN KEY(memberId) REFERENCES members(memberId)
+);
