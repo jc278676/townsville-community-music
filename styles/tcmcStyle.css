@@ -21,6 +21,7 @@ div {
 	list-style: none;
 	background: #cecece;
 	padding-top: 50px;
+	border-radius: 15px;
 }
 .header li a:hover{
 	color: #8CD8D2;
