@@ -43,7 +43,7 @@ Every web page has the following structure:
     // set in the calling file.
     echo "<div class='header'>";
         // Must specify which section we represent before including siteNavigationBanner.php
-        $sectionName="home";
+        $sectionName="index";
         include_once("siteNavigationBanner.php");
     echo "</div class='header'>";
     ?>
@@ -56,6 +56,7 @@ Every web page has the following structure:
                 <div class="artistShow"><img src="AvivaTheatre200.gif" width="200" height="200" alt=""/><br><br> TICKETS</div>
                 <div class="artistShow"><img src="AvivaTheatre200.gif" width="200" height="200" alt=""/><br><br> TICKETS</div>
                 <div class="artistShow"><img src="AvivaTheatre200.gif" width="200" height="200" alt=""/><br><br> TICKETS</div>
+
 
                 <br>
             </div>
