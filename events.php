@@ -38,12 +38,14 @@ Every web page has the following structure:
 </div id="colourHeader">
 
 <div id="siteCenter">
-<p>Email:	
-  <input name="logOnEmail" type="text" size="30" maxlength="20">
-</p>
-<p>Password:
-  <input name="logOnPassword" type="password" size="30" maxlength="20">
-</p>
+    <p>Email:
+    <input name="logOnEmail" type="text" size="30" maxlength="20">
+  </p>
+  <p>Password:	
+    <input name="logOnPassword" type="password" size="30" maxlength="20">
+  </p>
+<input name="button" type="button" value="Log On">
+<input name="button" type="button" value="Log Off">
       <?php
 	  //Wrong password message
       if (isset($_SESSION['msg'])) {
@@ -72,7 +74,7 @@ Every web page has the following structure:
         include_once("siteNavigationBanner.php");
     echo "</div class='header'>";
     ?>
-    
+  
 
     <div id="contentLeft">
         <div class="artist">
