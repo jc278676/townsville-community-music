@@ -34,10 +34,35 @@ Every web page has the following structure:
 <body>
 
 <div id="colourHeader">
+
 </div id="colourHeader">
 
 <div id="siteCenter">
-
+<p>Email:	
+  <input name="logOnEmail" type="text" size="30" maxlength="20">
+</p>
+<p>Password:
+  <input name="logOnPassword" type="password" size="30" maxlength="20">
+</p>
+      <?php
+	  //Wrong password message
+      if (isset($_SESSION['msg'])) {
+	echo "<p style='color:red'>".$_SESSION['msg']."</p>"; 
+	//remove the message since it has been displayed.
+	unset($_SESSION['msg']);
+	}
+	?>
+    
+   	<?php
+	//logout button
+    if (isset($_SESSION['msgG'])) {
+		echo"<form>";
+		echo "<p style='color:green'>".$_SESSION['msgG']."</p>"; 
+		echo '<input type="button" name="logout" id="logout" value="Logout" onClick="location.href=\'../Scripts/Logout.php\'"/>'; 
+		echo"</form>";
+	}
+	
+?> 
     <?php
     // includes which fill div elements should have the div open and close tags
     // set in the calling file.
@@ -47,6 +72,7 @@ Every web page has the following structure:
         include_once("siteNavigationBanner.php");
     echo "</div class='header'>";
     ?>
+    
 
     <div id="contentLeft">
         <div class="artist">
