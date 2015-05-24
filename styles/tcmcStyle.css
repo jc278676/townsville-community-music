@@ -19,7 +19,6 @@ position: absolute;
 background: #8CD8D2;
 margin-top: 115px;
 height: 250px;
-
 }
 .header img{
 margin-right: 15px;
@@ -58,20 +57,14 @@ padding: 0px;
 display: inline;
 padding: 0 px !important;
 }
-.center a {
+.center {
 float: left;
 margin-left: 200px;
 font-weight: bolder;
 font-size: 200%;
-font-style: oblique;
-width: 250px;
+width: 100%;
 text-decoration: none;
 color: black;
-}
-.center p a:hover{
-padding: 0px;
-color: #2EBC92;
-background: #8CD8D2;
 }
 .currentHeaderSection{
 display: inline;
@@ -158,6 +151,7 @@ background: #5C5C5C;
 .event{
 background-color: white;
 padding: 20px;
+margin-bottom: 20px;
 border-radius: 20px;
 }
 .borderLine{
@@ -168,10 +162,14 @@ margin-top: 20px;
 }
 .information img {
 float: left;
-padding-right: 10px;
+margin: 10px;
+
 }
 .information{
 padding: 10px;
+    clear: left;
+    height: auto;
+    overflow:hidden;
 }
 .artistShow {
 float: left;
@@ -203,6 +201,12 @@ position: relative;
 width: 1200px;
 padding-top: 30px;
 }
+.footerContent p {
+    float: left;
+}
 .sponsorImg {
 float: right;
+}
+.sponsorImg img {
+margin-right: 40px; 
 }
