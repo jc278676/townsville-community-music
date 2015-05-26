@@ -1,5 +1,1 @@
-<?php
-echo "<p>";
-    echo "<a href='artistPage.html'>Various calls to action live here!</a>";
-echo "</p>";
-?>
+<img src="purchasetickets.gif" width="400" height="100" alt="Purchase Tickets"/>

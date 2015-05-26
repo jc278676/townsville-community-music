@@ -6,12 +6,13 @@
 # and that there is never a link to the current page.
 #
 -->
+<!--
 <div class="member">
-    <ul><p>Email:	
+    <ul><p>Email:
   <input name="logOnEmail" type="text" size="30" maxlength="20">
 </p>
 <p>Password:
-  <input name="logOnPassword" type="password" size="30" maxlength="20">  
+  <input name="logOnPassword" type="password" size="30" maxlength="20">
   <form id="form1" name="form1" method="post" action="">
         <input type="submit" name="button" id="button" value="Log in" />
          <input type="submit" name="button1" id="button1" value="Log out" />
@@ -19,6 +20,13 @@
 </li>
     </ul>
 </div class="member">
+-->
+<div class="member">
+    <ul>
+        <li><img src="buttonUp.gif" width="80" height="17" alt=""/></li>
+        <li><img src="buttonUp.gif" width="80" height="17" alt=""/></li>
+    </ul>
+</div>
 <ul>
     <li><a href="artistPage.html"><img src="logo.png" width="141" height="100" alt="Home"/></a></li>
     <?php
