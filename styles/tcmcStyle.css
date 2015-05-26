@@ -57,6 +57,33 @@ padding: 0px;
 display: inline;
 padding: 0 px !important;
 }
+#button li {
+    float: right;
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+    top: 0;
+}
+#button li a {
+    height: 17px;
+    display: block;
+}
+#up {
+    left: 0px;
+    width: 103px;
+	background: url("signUpRoll.gif") no-repeat 0 0px;
+}
+#up a:hover{
+    background: url("signUpRoll.gif") no-repeat 0 -17px;
+}
+#in {
+    left: 0px;
+    width: 103px;
+	background: url("signInRoll.gif") no-repeat 0 0px;
+}
+#in a:hover{
+    background: url("signInRoll.gif") no-repeat 0 -17px;
+}
 .center {
 float: left;
 margin-left: 200px;
@@ -238,3 +265,5 @@ margin-right: 40px;
     font-size: 400%;
     font-weight: 900;
 }
+
+    
