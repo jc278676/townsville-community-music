@@ -13,9 +13,7 @@ foreach ($dbh->query($sql) as $row)
 ?>
 <?php
     $formName = "maintForm" . $row[memberId];
-    echo "<form id=$formName name=$formName method='post' action='dbMaintHandler.php'>";
-    echo "<h2>$row[artistName]</h2>";
-    echo "<p>";
+    echo "<form id=$formName name=$formName method='post' action='dbMaintHandler1.php'>";
 	
     echo "<label for='memberClass'>	Member Class: </label>";
     echo "<input type='integer' name='memberClass' id='memberClass' value='$row[memberClass]'>";

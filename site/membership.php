@@ -57,13 +57,12 @@ Every web page has the following structure:
             <p class="borderLine">
             <div class="information">
             
+
+            
 <form id='insert' name='insert' method='post' action='dbMaintHandler1.php'>
 <fieldset class='subtleSet'>
                 <h3>Membership Form:</h3><br>
-                
-                
-                <form action="" method="post">
-
+          
                     <label>First Name:</label> <input align="middle" type="text" placeholder="First Name"><br><br>
                     <label>Surname:</label> <input align="middle" type="text" placeholder="Surname"><br><br>
                     Postal Address: <br>
@@ -75,11 +74,15 @@ Every web page has the following structure:
                     <label> Phone(Daytime Hours):</label> <input type="tel" placeholder="Daytime Phone Number"><br><br>
                     <label> Phone(After Hours):</label> <input type="tel" placeholder="After Hours Phone"><br><br>
                     <label> Mobile:</label> <input type="tel" placeholder="Mobile"> <br><br>
-                    <label> </label> <input type=submit value="Submit"><br><br>
-                </form>
+                    <label> </label> 
+                    <input type='submit' name='submit' id='submit' value='Insert Entry'>
+    </p>
+ 
+</form>
 
          <label> </label>  <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_paynow_SM.gif" name="submit" alt="PayPal � The safer, easier way to pay online."><br>
                 <label> </label> <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif" name="submit" alt="PayPal � The safer, easier way to pay online."><br>
+                
             </div>
         </div>
         </p>

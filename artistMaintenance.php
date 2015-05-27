@@ -7,16 +7,15 @@ include("dbConnect.php")
 <!doctype html>
 <html>
 <head>
-    <meta charset='UTF-8'>
-    <title>Artist List Maintenance</title>
-
-    <link href='styles/artistDisplay.css' rel='stylesheet' type='text/css'>
+<meta charset='UTF-8'>
+<title>Artist List Maintenance</title>
+<link href='styles/artistDisplay.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 <h1>Artist Database Maintenance</h1>
 <form id='insert' name='insert' method='post' action='dbMaintHandler.php'>
-<fieldset class='subtleSet'>
+  <fieldset class='subtleSet'>
     <h2>Insert new artist:</h2>
     <p>
       <label for='artistName'>Name: </label>
@@ -27,24 +26,23 @@ include("dbConnect.php")
       <input type='text' name='artistGenre' id='artistGenre'>
     </p>
     <p>
-        <label for='artistUrl'>Website: </label>
-        <input type='text' name='artistUrl' id='artistUrl'>
+      <label for='artistUrl'>Website: </label>
+      <input type='text' name='artistUrl' id='artistUrl'>
+    </p>
+    <p> 
+      <!-- TODO: weave in photo upload capability -->
+      <label for='artistPhoto'>File Name: </label>
+      <input type='text' name='artistPhoto' id='artistPhoto'>
     </p>
     <p>
-        <!-- TODO: weave in photo upload capability -->
-        <label for='artistPhoto'>File Name: </label>
-        <input type='text' name='artistPhoto' id='artistPhoto'>
-    </p>
-    <p>
-        <label for='artistText'>Artist Description:</label>
-        <textarea name='artistText' id='artistText' form='insert' rows='12' cols='80'>Write a blurb about this artist (up to 4Kb).</textarea>
+      <label for='artistText'>Artist Description:</label>
+      <textarea name='artistText' id='artistText' form='insert' rows='12' cols='80'>Write a blurb about this artist (up to 4Kb).</textarea>
     </p>
     <p>
       <input type='submit' name='submit' id='submit' value='Insert Entry'>
     </p>
-</fieldset>
+  </fieldset>
 </form>
-
 <fieldset class='subtleSet'>
 <h2>Current data:</h2>
 <?php
@@ -76,7 +74,6 @@ foreach ($dbh->query($sql) as $row)
     echo "</p>";
     echo "<input type='hidden' name='artistId' value='$row[artistId]' />";
 ?>
-
 <br>
 <input type='submit' name='submit' value='View Details'>
 <input type='submit' name='submit' value='Update'>

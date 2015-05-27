@@ -13,7 +13,7 @@ include("dbConnect.php");
 <title>Artist Maintenance Action - Results</title>
 <link href='styles/artistDisplay.css' rel='stylesheet' type='text/css'></head>
 <body>
-<h1>Artist Maintenance Action - Results</h1>
+<h1>Member Maintenance Action - Results</h1>
 <div>
 <?php
 //TODO: Gracefully handle special characters in POSTed form data
@@ -81,7 +81,7 @@ else {
 $dbh = null;
 ?>
 
-<p><a href='#' onclick='history.go(-1)'>Return to membership page</a> </p>
+<a href="membership.php">Return to membership page</a>
 </div>
 </body>
 </html>
