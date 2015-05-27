@@ -22,20 +22,18 @@
 </div class="member">
 -->
 <div class="member">
-    <ul>
-           <ul><p>Email:
-  <input name="logOnEmail" type="text" size="30" maxlength="20">
-</p>
-<p>Password:
-  <input name="logOnPassword" type="password" size="30" maxlength="20">
-  <form id="form1" name="form1" method="post" action="">
-        <input type="submit" name="button" id="button" value="Log in" />
-         <input type="submit" name="button1" id="button1" value="Log out" />
-  </form></p>
+    <ul><li>Email: <input name="logOnEmail" type="text" size="30" maxlength="20"></li>
+
+        <li>Password:<input name="logOnPassword" type="password" size="30" maxlength="20"></li>
+        <form id="form1" name="form1" method="post" action="">
+            <input type="submit" name="button" id="button" value="Log in" />
+            <input type="submit" name="button1" id="button1" value="Log out" />
+        </form>
+        </li>
     </ul>
 </div>
 <ul>
-    <li><a href="artistPage.html"><img src="logo.png" width="141" height="100" alt="Home"/></a></li>
+    <li><a href="index.php"><img src="logo.png" width="141" height="100" alt="Home"/></a></li>
     <?php
 
         $headerSections = array (
