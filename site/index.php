@@ -29,6 +29,10 @@ Every web page has the following structure:
     $pageTitle="Townsville Community Music Centre: Home";
     include("headSectionContent.php");
     ?>
+    <meta name="description" content="Townsville Community Music Centre is a not-for-profit, incorporated organisation serving musicians and their audience in North Queensland. The Music Centre's role includes facilitation, presentation and promotion of events, functions, education, workshops, concerts, festivals in Townsville, and surrounding centres.
+
+Based in Townsville, North Qld, the Music Centre presents concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists. It is involved in the instigation of projects based on cross collaboration with other artistic disciplines, and it promotes the work of North Queensland musicians outside the region, organising tours and promoting their work.">
+
 </head>
 
 <body>
