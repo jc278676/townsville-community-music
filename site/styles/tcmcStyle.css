@@ -50,6 +50,7 @@ margin-bottom: 175px;
 .member ul{
 float: right;
 position: relative !important;
+color: #ffffff;
 display: inline;
 padding: 0px;
 }
@@ -57,7 +58,7 @@ padding: 0px;
 display: inline;
 padding: 0 px !important;
 }
-#button li {
+#button1 li {
     float: right;
     margin: 5px;
     padding: 0;
