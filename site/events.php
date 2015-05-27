@@ -13,6 +13,7 @@
     $pageTitle="Townsville Community Music Centre: Home";
     include("headSectionContent.php");
     ?>
+<title>Events</title>
 </head>
 
 <body>

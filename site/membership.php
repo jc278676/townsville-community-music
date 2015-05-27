@@ -1,4 +1,15 @@
-<!--
+ <?php
+    // the dbConnection include is a special case - it creates no output
+    // but sets up
+    include_once("dbConnect.php");
+    //
+    //
+    // Some of our output-creating includes require certain variables to be set prior to calling
+    // (This is a stylistic requirement, not a technical one - defaults are used if )
+    // headSectionContent.php will set a default value of "Untitled Page"
+    $pageTitle="Townsville Community Music Centre: Home";
+    include("headSectionContent.php");
+    ?><!--
 Every web page has the following structure:
 
     Head
@@ -17,20 +28,8 @@ Every web page has the following structure:
 <!doctype html>
 <html>
 <head>
-    <?php
-    // the dbConnection include is a special case - it creates no output
-    // but sets up
-    include_once("dbConnect.php");
-    //
-    //
-    // Some of our output-creating includes require certain variables to be set prior to calling
-    // (This is a stylistic requirement, not a technical one - defaults are used if )
-    // headSectionContent.php will set a default value of "Untitled Page"
-    $pageTitle="Townsville Community Music Centre: Home";
-    include("headSectionContent.php");
-    ?>
+<title>Membership</title>
 </head>
-
 <body>
 
 <div id="colourHeader">
@@ -57,7 +56,12 @@ Every web page has the following structure:
             </div>
             <p class="borderLine">
             <div class="information">
+            
+<form id='insert' name='insert' method='post' action='dbMaintHandler1.php'>
+<fieldset class='subtleSet'>
                 <h3>Membership Form:</h3><br>
+                
+                
                 <form action="" method="post">
 
                     <label>First Name:</label> <input align="middle" type="text" placeholder="First Name"><br><br>
@@ -74,8 +78,7 @@ Every web page has the following structure:
                     <label> </label> <input type=submit value="Submit"><br><br>
                 </form>
 
-
-                <label> </label>  <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_paynow_SM.gif" name="submit" alt="PayPal � The safer, easier way to pay online."><br>
+         <label> </label>  <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_paynow_SM.gif" name="submit" alt="PayPal � The safer, easier way to pay online."><br>
                 <label> </label> <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif" name="submit" alt="PayPal � The safer, easier way to pay online."><br>
             </div>
         </div>
@@ -85,12 +88,7 @@ Every web page has the following structure:
 </div id="siteCenter">
 
 <div id="footer">
-<?php
-// Page footer is a good place to close the db connection
-// No need to access the database after footer content is printed
-include("siteFooter.php");
-$dbh = null;
-?>
+
 </div id="footer">
 
 </body>
