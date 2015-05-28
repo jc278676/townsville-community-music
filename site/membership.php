@@ -60,25 +60,75 @@ Every web page has the following structure:
 
             
 <form id='insert' name='insert' method='post' action='dbMaintHandler1.php'>
-<fieldset class='subtleSet'>
-                <h3>Membership Form:</h3><br>
-          
-                    <label>First Name:</label> <input align="middle" type="text" placeholder="First Name"><br><br>
-                    <label>Surname:</label> <input align="middle" type="text" placeholder="Surname"><br><br>
-                    Postal Address: <br>
-                    <label> Line 1:</label> <input align="middle" id="addressLine1" type="text" placeholder="Unit / apartment Number"><br><br>
-                    <label> Line 2:</label> <input align="middle" id="addressLine1" type="text" placeholder="Street Number & Name"><br><br>
-                    <label> Town/Suburb:</label> <input align="middle" id="addressSuburb" type="text" placeholder="Town or Suburb"><br><br>
-                    <label> State:</label> <input align="middle" id="state" type="text" placeholder="State"> &nbsp;&nbsp;&nbsp;
-                    <label> Postcode:</label> <input align="middle" id="postcode" type="text" placeholder="Postcode"><br><br>
-                    <label> Phone(Daytime Hours):</label> <input type="tel" placeholder="Daytime Phone Number"><br><br>
-                    <label> Phone(After Hours):</label> <input type="tel" placeholder="After Hours Phone"><br><br>
-                    <label> Mobile:</label> <input type="tel" placeholder="Mobile"> <br><br>
-                    <label> </label> 
-                    <input type='submit' name='submit' id='submit' value='Insert Entry'>
+  <fieldset class='subtleSet'>
+    <h2>Insert new member:</h2>
+    <p>
+      <label for='memberClass'>Registration Type: </label>
+      <input type='interger' name='memberClass' id='memberClass'>
     </p>
- 
+    <p>
+      <label for='memberFname'>First Name: </label>
+      <input type='text' name='memberFname' id='memberFname'>
+    </p>
+    <p>
+      <label for='memberLname'>Website: </label>
+      <input type='text' name='memberLname' id='memberLname'>
+    </p>
+     <p>
+      <label for='memberPhone1'>Phone Day: </label>
+      <input type='text' name='memberPhone1' id='memberPhone1'>
+    </p>
+    <p>
+      <label for='memberPhone2'>After hours: </label>
+      <input type='text' name='memberPhone2' id='memberPhone2'>
+    </p>
+    <p>
+      <label for='memberPhone3'>Mobile: </label>
+      <input type='text' name='memberPhone3' id='memberPhone3'>
+    </p>
+        <p>
+      <label for='memberFname'>First Name: </label>
+      <input type='text' name='memberFname' id='memberFname'>
+    </p>
+    <p>
+      <label for='memberLname'>Website: </label>
+      <input type='text' name='memberLname' id='memberLname'>
+    </p>
+     <p>
+      <label for='memberAddressLine1'>Address Line 1: </label>
+      <input type='text' name='memberAddressLine1' id='memberAddressLine1'>
+    </p>
+    <p>
+      <label for='memberAddressLine2'>Address Line 2: </label>
+      <input type='text' name='memberAddressLine2' id='memberAddressLine2'>
+    </p>
+    <p>
+      <label for='memberAddressSuburb'>Suburb: </label>
+      <input type='text' name='memberAddressSuburb' id='memberAddressSuburb'>
+    </p>
+     <p>
+      <label for='memberAddressState'>State: </label>
+      <input type='text' name='memberAddressState' id='memberAddressState'>
+    </p>
+     <p>
+      <label for='memberAddressPostcode'>Postcode: </label>
+      <input type='text' name='memberAddressPostcode' id='memberAddressPostcode'>
+    </p>
+    <p>
+      <label for='memberEmail'>Email: </label>
+      <input type='text' name='memberEmail' id='memberEmail'>
+    </p>
+    <p>
+      <label for='memberPasswd'>Password: </label>
+      <input type='text' name='memberPasswd' id='memberPasswd'>
+    </p>
+  
+    <p>
+      <input type='submit' name='submit' id='submit' value='Insert Entry'>
+    </p>
+  </fieldset>
 </form>
+<fieldset class='subtleSet'>
 
          <label> </label>  <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_paynow_SM.gif" name="submit" alt="PayPal � The safer, easier way to pay online."><br>
                 <label> </label> <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif" name="submit" alt="PayPal � The safer, easier way to pay online."><br>

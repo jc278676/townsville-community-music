@@ -46,10 +46,6 @@ else if ($_REQUEST['submit'] == "Delete")
     else
         echo "Nothing deleted - query failed";
 }
-else if ($_REQUEST['submit'] == "View Details")
-{
-    header('Location: memberDisplay.php?memberId=' . $_REQUEST[memberId]);
-}
 else if ($_REQUEST['submit'] == "Update")
 {
 	$sql = "UPDATE members SET
