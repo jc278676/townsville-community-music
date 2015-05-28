@@ -64,9 +64,9 @@
 </ul>
 
 <?php
-echo "<div class='center'>";
-    include("callToAction.php");
-echo "</div class='center'>";
+//echo "<div class='center'>";
+//    include("callToAction.php");
+//echo "</div class='center'>";
 ?>
 
 

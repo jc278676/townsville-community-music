@@ -393,66 +393,97 @@ CREATE TABLE "events" (eventId INTEGER PRIMARY KEY NOT NULL
     ,   FOREIGN KEY(artistId) REFERENCES artists(artistId)
 );
 
-INSERT INTO "events" VALUES(47
-    ,   'Huge Block Party'
-    ,   '2015-06-30 19:00' --Automatically expires after this date
+
+INSERT INTO "events" VALUES(NULL
+    ,   'AVIVA and Friends Go Abroad!'
+    ,   '2015-06-14 14:00' --Automatically expires after this date
     ,   'C2 (Townsville Civic Centre)'
-    ,   'blockParty.jpg'
-    ,   ''                 -- This event is not ticketed through PatronBase
-    ,   'Like the man said - a Huge Block Party.'
-    ,   'BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER A SNAKE! A SNAKE! OOOH IT''S A SNAKE! BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOMBADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOMBADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER'
+    ,   'AvivanF500.jpg'
+    ,   '0782'                 -- This event is not ticketed through PatronBase
+    ,   'A musical world tour'
+    ,   'Grab your passport and travel with us to the Celtic Highlands and then step into the Bluegrass country in the heart of America!
+Join us for a toe tappin'', soul searchin'' journey as AVIVA makes it''s way around the world on the first of our two globe trotting adventures!
+
+featuring
+Caroline Lloyd-Doolan on violin
+Susan Fraser on violin
+Rebecca Brown on viola
+Carol Radovanovic on cello
+Paul Neilson on percussion '
     ,   1
     ,   1
 );
 
 INSERT INTO "events" VALUES(NULL
-    ,   'Huge Block Party'
-    ,   '2015-07-14 19:00' --Automatically expires after this date
-    ,   'C2 (Townsville Civic Centre)'
-    ,   'blockParty.jpg'
+    ,   'SUNDAY VARIETY CONCERT'
+    ,   '2015-06-21 14:00' --Automatically expires after this date
+    ,   'Pimlico Performing Arts Centre'
+    ,   'FOTT.png'
     ,   ''                 -- This event is not ticketed through PatronBase
-    ,   'Like the man said - a Huge Block Party.'
-    ,   'BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER A SNAKE! A SNAKE! OOOH IT''S A SNAKE! BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOMBADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOMBADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER'
+    ,   'Our Regularly Scheduled Sunday Show'
+    ,   '2pm Sunday 21 June at Pimlico Performing Arts Centre
+Fulham Road
+Enquiries - please phone 4723 7879 '
     ,   1
     ,   1
 );
 
 INSERT INTO "events" VALUES(NULL
-    ,   'Huge Block Party'
-    ,   '2015-04-21 19:00' --Automatically expires after this date
-    ,   'C2 (Townsville Civic Centre)'
-    ,   'blockParty.jpg'
-    ,   ''                 -- This event is not ticketed through PatronBase
-    ,   'Like the man said - a Huge Block Party.'
-    ,   'BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER A SNAKE! A SNAKE! OOOH IT''S A SNAKE! BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOMBADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOMBADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER'
+    ,   'Die Frankfurter Oompah Band'
+    ,   '2015-05-31 14:00' --Automatically expires after this date
+    ,   'C2  (Townsville Civic Centre)'
+    ,   'Oompahlogo600.png'
+    ,   '0831'                 -- This event is not ticketed through PatronBase
+    ,   'presenting a Taste of Bavaria'
+    ,   'Traditional Bavarian Music from the Egerlaendeer Musikanten and Bavarian Composers,
+performed in true Oktoberfest style. '
     ,   1
     ,   1
 );
 
 INSERT INTO "events" VALUES(NULL
-    ,   'Huge Block Party'
-    ,   '2015-07-21 19:00' --Automatically expires after this date
-    ,   'C2 (Townsville Civic Centre)'
-    ,   'blockParty.jpg'
+    ,   'TOWNSVILLE CONCERT BAND'
+    ,   '2015-06-28 14:00' --Automatically expires after this date
+    ,   'C2  (Townsville Civic Centre)'
+    ,   'TCBlogo200.jpg'
     ,   ''                 -- This event is not ticketed through PatronBase
-    ,   'Like the man said - a Huge Block Party.'
-    ,   'BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER A SNAKE! A SNAKE! OOOH IT''S A SNAKE! BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOMBADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOMBADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER'
+    ,   'Quarterly Performance'
+    ,   ''
     ,   1
     ,   1
 );
 
 INSERT INTO "events" VALUES(NULL
-    ,   'Huge Block Party'
-    ,   '2015-07-07 19:00' --Automatically expires after this date
-    ,   'C2 (Townsville Civic Centre)'
-    ,   'blockParty.jpg'
+    ,   'TOWNSVILLE CONCERT BAND'
+    ,   '2015-09-27 14:00' --Automatically expires after this date
+    ,   'C2  (Townsville Civic Centre)'
+    ,   'TCBlogo200.jpg'
     ,   ''                 -- This event is not ticketed through PatronBase
-    ,   'Like the man said - a Huge Block Party.'
-    ,   'BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER A SNAKE! A SNAKE! OOOH IT''S A SNAKE! BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER MUSHROOM MUSHROOM BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER BADGER'
+    ,   'Quarterly Performance'
+    ,   ''
     ,   1
     ,   1
 );
 
+
+INSERT INTO "events" VALUES(NULL
+    ,   'AVIVA STRING QUARTET'
+    ,   '2015-11-29 14:00' --Automatically expires after this date
+    ,   'C2  (Townsville Civic Centre)'
+    ,   'AVIVA-LANE500.jpg'
+    ,   ''                 -- This event is not ticketed through PatronBase
+    ,   'Last chance to see them this year'
+    ,   '
+The superb foursome return with their final concert for 2015, bringing their signature style of classical and modern music to the masses in their own fresh and entertaining style.
+
+featuring
+Caroline Lloyd-Doolan on violin
+Susan Fraser on violin
+Jessica Winton on viola
+Ivy Wu on cello '
+    ,   1
+    ,   1
+);
 --
 DROP TABLE "bulletins";
 CREATE TABLE "bulletins" (bulletinId INTEGER PRIMARY KEY NOT NULL
@@ -467,73 +498,41 @@ CREATE TABLE "bulletins" (bulletinId INTEGER PRIMARY KEY NOT NULL
 
 INSERT INTO "bulletins" VALUES(93
     ,   2
-    ,   'Cello for sale'
-    ,   '2015-06-30'
-    ,   'cello.jpg'
-    ,   'Magnificent instrument made by famed luthier Antonio Varistradius.  Only $1400!  Missing body, neck, pegbox and fingerboard, but has excellent endpin and bridge. Some re-assembly required - does not include strings or bow. Contact Fred on 555 1798' 
+    ,   'Chord Organ Wanted'
+    ,   '2015-06-03'
+    ,   'Chord Organ.jpg'
+    ,   'I am after a Chord Organ like the one in the attached photo. This is identical to the one I learnt on as a young girl some 40 odd years ago, and my father bought me one for me 10th birthday.
+Sadly this treasured organ finally gave up the ghost some 10 years past and I would dearly love to be able to find another to takes its place, my home just doesn’t seem the same without it.
+
+Any help would be greatly appreciated.
+Caroline Kane
+phone 4776 4760 during office hours'
     ,   '1'
 );
 
 INSERT INTO "bulletins" VALUES(NULL
     ,   2
-    ,   'For Sale - f-holes'
-    ,   '2015-05-30'
-    ,   'f-hole.jpg'
-    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
+    ,   'Rouvas Academy of Singing'
+    ,   '2015-06-17'
+    ,   'JohnRouvas01.jpg'
+    ,   'I have been in the music industry in Sydney for over 30 years in the capacity of singing teacher, stage performer, singer and musician. My daughter Diana Rouvas was a finalist in the 2012 “The Voice” television show and she is a testament to what can be achieved with correct vocal training. Allow me to show you her technique and give yourself the opportunity to excel as a vocalist. Skype lessons also available 
+Visit rouvasacademyofsinging.com.au
+or phone John 0404 044 823'
     ,   '1'
 );
 
 INSERT INTO "bulletins" VALUES(NULL
     ,   2
-    ,   'For Sale - f-holes'
-    ,   '2015-07-30'
-    ,   'f-hole.jpg'
-    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
-    ,   '1'
-);
+    ,   'Volunteer Singers/Musicians'
+    ,   '2015-09-24'
+    ,   'StJosephs.png'
+    ,   'Our Parish Priest, Fr Mick Peters, is trying to development and foster a community for our 6 PM Vigil Mass at St Josephs on the Strand.
+I''m helping by organising an event format, where I invite our members to bring a plate for a buffet and I provide music, or friends who can sing or perform.
+Now that we are achieving some success, we need more people who can sing or play music.
+I''m open to any kind of singing or performing so long as it is not too controversial. My preference would be for an artist to sing a medley of old time favorites.
+Mass starts at 6pm and finishes about 10 to 7.
 
-INSERT INTO "bulletins" VALUES(NULL
-    ,   2
-    ,   'For Sale - f-holes'
-    ,   '2015-08-30'
-    ,   'f-hole.jpg'
-    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
-    ,   '1'
-);
-
-INSERT INTO "bulletins" VALUES(NULL
-    ,   2
-    ,   'For Sale - f-holes'
-    ,   '2015-09-30'
-    ,   'f-hole.jpg'
-    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
-    ,   '1'
-);
-
-INSERT INTO "bulletins" VALUES(NULL
-    ,   2
-    ,   'For Sale - f-holes'
-    ,   '2015-10-30'
-    ,   'f-hole.jpg'
-    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
-    ,   '1'
-);
-
-INSERT INTO "bulletins" VALUES(NULL
-    ,   2
-    ,   'For Sale - f-holes'
-    ,   '2015-11-30'
-    ,   'f-hole.jpg'
-    ,   'I have a collection of some 40 odd f-holes from various instruments. Contact Fred on 555 1798' 
-    ,   '1'
-);
-
-INSERT INTO "bulletins" VALUES(NULL
-    ,   1
-    ,   'Street Performances (Busker)'
-    ,   '2015-08-31'
-    ,   'busker.jpg'
-    ,   'Busker Seasick Steve has a regular spot at the north-eastern corner of Hyde Avenue and Cieke Streets.  This notice serves as much for Steve to "Mark his territory" as it were, as it does to publicise his busking activities. So please, do come along and throw money into his hat, but don''t play Hyde and Cieke!'
+If you would like to take part, please call Merle Trembath 0418882633 anytime'
     ,   '1'
 );
 

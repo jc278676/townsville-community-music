@@ -56,69 +56,49 @@ Every web page has the following structure:
             </div>
             <p class="borderLine">
             <div class="information">
-            
 
-            
+
+<h3>Please fill in your details to join Townsville Community Music Centre</h3>
 <form id='insert' name='insert' method='post' action='dbMaintHandler1.php'>
   <fieldset class='subtleSet'>
-    <h2>Insert new member:</h2>
-    <p>
       <label for='memberClass'>Registration Type: </label>
-      <input type='interger' name='memberClass' id='memberClass'>
-    </p>
-    <p>
+      <input type='integer' name='memberClass' id='memberClass'>
+      <br>
       <label for='memberFname'>First Name: </label>
       <input type='text' name='memberFname' id='memberFname'>
-    </p>
-    <p>
-      <label for='memberLname'>Website: </label>
+      <br>
+      <label for='memberLname'>Last Name: </label>
       <input type='text' name='memberLname' id='memberLname'>
-    </p>
-     <p>
+      <br>
       <label for='memberPhone1'>Phone Day: </label>
       <input type='text' name='memberPhone1' id='memberPhone1'>
-    </p>
-    <p>
+      <br>
       <label for='memberPhone2'>After hours: </label>
       <input type='text' name='memberPhone2' id='memberPhone2'>
-    </p>
-    <p>
+      <br>
       <label for='memberPhone3'>Mobile: </label>
       <input type='text' name='memberPhone3' id='memberPhone3'>
-    </p>
-        <p>
+      <br>
       <label for='memberFname'>First Name: </label>
       <input type='text' name='memberFname' id='memberFname'>
-    </p>
-    <p>
-      <label for='memberLname'>Website: </label>
-      <input type='text' name='memberLname' id='memberLname'>
-    </p>
-     <p>
+      <br>
       <label for='memberAddressLine1'>Address Line 1: </label>
       <input type='text' name='memberAddressLine1' id='memberAddressLine1'>
-    </p>
-    <p>
+      <br>
       <label for='memberAddressLine2'>Address Line 2: </label>
       <input type='text' name='memberAddressLine2' id='memberAddressLine2'>
-    </p>
-    <p>
+      <br>
       <label for='memberAddressSuburb'>Suburb: </label>
       <input type='text' name='memberAddressSuburb' id='memberAddressSuburb'>
-    </p>
-     <p>
+      <br>
       <label for='memberAddressState'>State: </label>
       <input type='text' name='memberAddressState' id='memberAddressState'>
-    </p>
-     <p>
       <label for='memberAddressPostcode'>Postcode: </label>
       <input type='text' name='memberAddressPostcode' id='memberAddressPostcode'>
-    </p>
-    <p>
+      <br>
       <label for='memberEmail'>Email: </label>
       <input type='text' name='memberEmail' id='memberEmail'>
-    </p>
-    <p>
+      <br>
       <label for='memberPasswd'>Password: </label>
       <input type='text' name='memberPasswd' id='memberPasswd'>
     </p>
