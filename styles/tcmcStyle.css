@@ -161,6 +161,10 @@ padding: 10px;
 margin-bottom: 30px;
 border-radius: 20px;
 }
+.event h2{
+	color: black;
+}
+}
 h2{
 text-align: left;
 color: white;
