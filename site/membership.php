@@ -57,8 +57,6 @@ Every web page has the following structure:
             <p class="borderLine">
             <div class="information">
             
-
-            
 <form id='insert' name='insert' method='post' action='dbMaintHandler1.php'>
   <fieldset class='subtleSet'>
     <h2>Insert new member:</h2>
@@ -71,7 +69,7 @@ Every web page has the following structure:
       <input type='text' name='memberFname' id='memberFname'>
     </p>
     <p>
-      <label for='memberLname'>Website: </label>
+      <label for='memberLname'>Last Name: </label>
       <input type='text' name='memberLname' id='memberLname'>
     </p>
      <p>
@@ -86,14 +84,7 @@ Every web page has the following structure:
       <label for='memberPhone3'>Mobile: </label>
       <input type='text' name='memberPhone3' id='memberPhone3'>
     </p>
-        <p>
-      <label for='memberFname'>First Name: </label>
-      <input type='text' name='memberFname' id='memberFname'>
-    </p>
-    <p>
-      <label for='memberLname'>Website: </label>
-      <input type='text' name='memberLname' id='memberLname'>
-    </p>
+
      <p>
       <label for='memberAddressLine1'>Address Line 1: </label>
       <input type='text' name='memberAddressLine1' id='memberAddressLine1'>
