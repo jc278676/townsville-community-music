@@ -46,7 +46,9 @@
             $rows= $query -> fetchAll();
             shuffle($rows);
 
+            echo "<h2>Bulletins</h2>";
             foreach ($rows as $row) {
+                echo "<p class='borderLine'></p>";
                     //
                     echo "<p><h3>$row[bulletinTitle]</h3><br>";
                     echo "<img src='images/$row[bulletinImage]' class='artistPhotoRight'></a><br>";
