@@ -47,25 +47,32 @@ Based in Townsville, North Qld, the Music Centre presents concerts and workshops
     // set in the calling file.
     echo "<div class='header'>";
         // Must specify which section we represent before including siteNavigationBanner.php
-        $sectionName="index";
+        $sectionName="sponsors";
         include_once("siteNavigationBanner.php");
     echo "</div class='header'>";
     ?>
 
     <div id="content">
-        <div class="event">
-            <div class="information">
-                <h1>New To Townsville? Love Music? THEN BECOME A MEMBER!</h1>
-                <a class="signUp" href="membership.html">SIGN UP</a><br><br>
-                You looking for some assistance on getting concerts with your band, then fill out the application form and allow us to assist you in your endeavours. Plus ou can get discounts up to 50%, if you are a member of the Townsville Community Music Centre. JUST CLICK THE SIGNUP BUTTON!
+            <h2>Sponsors</h2>
+            <div class="event">
+
+                <div class="information">
+                    <p><img src="TCCcolour150193.gif" width="150" height="193" alt="Civic Centre"></p>
+                    <h3>Townsville City Council</h3>
+                    The Council's Partnerships and Sponsorships scheme provides vital core funding which enables us to maintain the administrative base for all our other activities, and also provides the premises which house our office space.
+                    The Council also assists with the performance venues for our concerts and workshops.
+
+                </div>
+                <p class="borderLine">
+                <div class="information">
+                    <img src="QG.gif" width="150" height="188" alt="QLD Government"/> <h3>About Us</h3>
+                    <h3>Queensland Government</h3>
+                    The Gambling Community Benefit Fund has assisted us to obtain office equipment and sound and lighting equipment for our productions.
+                </div>
+                </p>
             </div>
-            <p class="borderLine">
-            <div class="information">
-                <h1>We Are also on Facebook</h1>
-                We can also be found on facebook. <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534"><img src="FBimages.gif" width="147" height="98" alt="Facebook"></a>
-            </div>
-            </p>
-        </div>
+
+
     </div>
 
 

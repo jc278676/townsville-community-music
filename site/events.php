@@ -125,7 +125,8 @@
                     echo "<img src='images/thumb$row[eventPromoPhoto]' class='artistPhotoRight'></a><br>";
                     echo "Date: $row[eventDateTime]<br>";
                     echo "Venue: $row[eventVenue]<br>";
-
+                    echo "<p class='borderLine'>";
+                    echo "</p>";
                     //
                     echo "$row[eventShortText]</li>";
                 } // no else for this if

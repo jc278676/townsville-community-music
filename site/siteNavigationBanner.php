@@ -42,8 +42,9 @@
             "bulletinBoard" => "Bulletin Board",
             "musicians" => "Musicians",
             "membership" => "Membership",
-            "about" => "About Us"
-        );
+            "about" => "About Us",
+            "sponsors" => "Sponsors"
+         );
 
         // The including php page sets the value of $sectionName to one of the headerSection
         // values if it is the target of a header link or leaves it null if not.
