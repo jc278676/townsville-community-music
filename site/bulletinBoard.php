@@ -48,7 +48,7 @@
 
             foreach ($rows as $row) {
                     //
-                    echo "<p>$row[bulletinTitle]<br>";
+                    echo "<p><h3>$row[bulletinTitle]</h3><br>";
                     echo "<img src='images/$row[bulletinImage]' class='artistPhotoRight'></a><br>";
                     //
                     echo "$row[bulletinText]</p>";

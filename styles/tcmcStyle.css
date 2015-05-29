@@ -89,7 +89,6 @@ padding: 0 px !important;
 }
 .center {
 float: left;
-margin-left: 200px;
 font-weight: bolder;
 font-size: 200%;
 width: 100%;
@@ -268,5 +267,29 @@ margin-right: 40px;
     font-size: 400%;
     font-weight: 900;
 }
-
+.tickets {
+	width: 300px;
+	float: right;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    background: #fd8d15;
+    border-width: 5px;
+    border: solid;
+    border-color: #fd8d15;
+    border-radius: 10px;   
+}
+.tickets:hover{
+    background: white;
+    color: #fd8d15;
+    border: solid;
+    border-color: #fd8d15;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: 900;
+}
+    
     

@@ -20,7 +20,7 @@ include("dbConnect.php");
 if ($_REQUEST['submit'] == "Insert Entry")
 {
 	$sql = "INSERT INTO members VALUES (NULL,
-              '$_REQUEST[memberClass]',
+              2,
               '$_REQUEST[memberFname]',
               '$_REQUEST[memberLname]',
               '$_REQUEST[memberPhone1]',
@@ -32,7 +32,8 @@ if ($_REQUEST['submit'] == "Insert Entry")
               '$_REQUEST[memberAddressState]',
 			  '$_REQUEST[memberAddressPostcode]',
               '$_REQUEST[memberEmail]',
-              '$_REQUEST[memberPasswd]');";
+              '$_REQUEST[memberPasswd]',
+              NULL);";
 	if ($dbh->exec($sql))
 		echo "Successfully inserted new entry - $_REQUEST[memberFname]";
 	else
