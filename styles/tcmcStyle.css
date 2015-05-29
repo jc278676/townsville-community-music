@@ -137,7 +137,7 @@ padding: 5px;
 float: left;
 padding-top: 20px;
 padding-right: 10px;
-paddign-bottom: 100px;
+padding-bottom: 100px;
 text-align: left;
 border-radius: 15px;
 padding-left: 10px;
@@ -147,6 +147,9 @@ background: #5C5C5C;
 list-style: none;
 text-align: left;
 background: #cecece;
+margin-left:5px;
+margin-right: 5px;
+border-radius: 10px;
 }
 #artistList a {
 color: black;
@@ -154,6 +157,7 @@ text-decoration: none;
 }
 #artistList li:hover{
 background: #A8C1C5;
+border-radius: 10px;
 }
 .featureArtist {
 background-color: white;
@@ -174,7 +178,7 @@ font-weight: bolder;
 float: left;
 padding-top: 20px;
 padding-right: 10px;
-paddign-bottom: 100px;
+padding-bottom: 100px;
 text-align: left;
 border-radius: 15px;
 padding-left: 10px;
