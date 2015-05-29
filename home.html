@@ -1,0 +1,113 @@
+<!--
+Every web page has the following structure:
+
+    Head
+        headSectionContent (mostly metadata)
+    Body
+        siteHeader
+            siteBanner (horizontal navigation bar)
+            callToAction (may change with each page it is on)
+
+        mainContent
+            primaryContent  (~60% width)
+            secondaryContent (~30% width)
+
+        footer content (legals, disclaimer, etc.)
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset='UTF-8'><title>Townsville Community Music Centre: Home</title><link href='tcmcStyle.css' rel='stylesheet' type='text/css'>    <meta name="description" content="Townsville Community Music Centre is a not-for-profit, incorporated organisation serving musicians and their audience in North Queensland. The Music Centre's role includes facilitation, presentation and promotion of events, functions, education, workshops, concerts, festivals in Townsville, and surrounding centres.
+
+Based in Townsville, North Qld, the Music Centre presents concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists. It is involved in the instigation of projects based on cross collaboration with other artistic disciplines, and it promotes the work of North Queensland musicians outside the region, organising tours and promoting their work.">
+
+</head>
+
+<body>
+
+<div id="colourHeader">
+</div id="colourHeader">
+
+<div id="siteCenter">
+
+    <div class='header'><!--
+#
+# This php include file dynamically builds the sitewide header, 
+# ensuring (with the assistance of the page that includes it) that 
+# the part of the site that the current page represents is indicated
+# and that there is never a link to the current page.
+#
+-->
+<!--
+<div class="member">
+    <ul><p>Email:
+  <input name="logOnEmail" type="text" size="30" maxlength="20">
+</p>
+<p>Password:
+  <input name="logOnPassword" type="password" size="30" maxlength="20">
+  <form id="form1" name="form1" method="post" action="">
+        <input type="submit" name="button" id="button" value="Log in" />
+         <input type="submit" name="button1" id="button1" value="Log out" />
+  </form></p>
+</li>
+    </ul>
+</div class="member">
+-->
+<div class="member">
+    <ul><li>Email: <input name="logOnEmail" type="text" size="30" maxlength="20"></li>
+
+        <li>Password:<input name="logOnPassword" type="password" size="30" maxlength="20"></li>
+        <form id="form1" name="form1" method="post" action="">
+            <input type="submit" name="button" id="button" value="Log in" />
+            <input type="submit" name="button1" id="button1" value="Log out" />
+        </form>
+        </li>
+    </ul>
+</div>
+<ul>
+    <li><a href="file:///F|/tcmc04/index.php"><img src="file:///F|/tcmc04/logo.png" width="141" height="100" alt="Home"/></a></li>
+    <li class='currentHeaderSection'>Home</li><li><a href='file:///F|/tcmc04/events.php'>Events</a></li><li><a href='file:///F|/tcmc04/bulletinBoard.php'>Bulletin Board</a></li><li><a href='file:///F|/tcmc04/musicians.php'>Musicians</a></li><li><a href='file:///F|/tcmc04/membership.php'>Membership</a></li><li><a href='file:///F|/tcmc04/about.php'>About Us</a></li><li><a href='file:///F|/tcmc04/sponsors.php'>Sponsors</a></li></ul>
+
+
+
+</div class='header'>
+    <div id="content">
+        <div class="event">
+            <div class="information">
+                <h1>New To Townsville? Love Music? Become a member today!</h1>
+                
+                 Are you really passionate music player? Do you really enjoy listening to a large variety of music styles? Or do you simply enjoy the atmosphere of live performances as well as discounts on tickets for these events? You could then benefit from the awesome offer of becoming a member of the Townsville Community Music Centre. You can get awesome discounts for your favourite bands, promote your favourite artists by adding their profile to the website as well as many other benefits! Simply head to the membership page to fill out your form, either online or post it to us and for only $25 a year you can immideately start enjoying the benefits of becoming a member today! <br><br>
+
+ If you have any questions feel free to email admin@townsvillemusic.org.au<br><br>
+ <a class="signUp" href="file:///F|/tcmc04/membership.html">SIGN UP</a><br><br>
+            </div>
+            <p class="borderLine">
+            <div class="information">
+                <h1>We are on Facebook</h1>
+                Head over to our facebook page and connect with other passionate Townsville musicians as well as keep up with your favourite musicians.  <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534"><img src="FBimages.gif" width="147" height="98" alt="Facebook"</a>
+            </div>
+            </p>
+        </div>
+    </div>
+
+
+</div id="siteCenter">
+
+<div id="footer">
+<div class="footerContent">
+    <p>
+        <strong>Contact Details:-</strong> <br>
+        <strong>Phone</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;07 4724 2086<br>
+        <strong>Address</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Townsville Civic         Theatre, 41 Boundary Street, Townsville, QLD 4810<br>
+        <strong>Office Hours</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.30 -2.30 Monday - Wednesday
+    </p>
+    <div class="sponsorImg">
+        <a href="https://www.qld.gov.au/"><img src="file:///F|/tcmc04/GCBF15091.gif" width="150" height="92" alt""/></a>
+        <a href="http://www.townsville.qld.gov.au/Pages/default.aspx"><img src="file:///F|/tcmc04/TCC83100.png" width="83" height="100" alt="sponsors"/></a>
+    </div>
+</div>
+
+</div id="footer">
+
+</body>
+</html>
