@@ -78,6 +78,7 @@
                 // Turns paragraphs of raw ASCII text into paragraphs of HTML
                 echo str_replace("\n", "</p><p>", $row[eventText]) . "</p>";
                 echo "</div>";
+                echo "<p class='borderLine'></p>";
             }
             ?>
         </div class="featureArtist">
@@ -125,8 +126,6 @@
                     echo "<img src='images/thumb$row[eventPromoPhoto]' class='artistPhotoRight'></a><br>";
                     echo "Date: $row[eventDateTime]<br>";
                     echo "Venue: $row[eventVenue]<br>";
-                    echo "<p class='borderLine'>";
-                    echo "</p>";
                     //
                     echo "$row[eventShortText]</li>";
                 } // no else for this if
