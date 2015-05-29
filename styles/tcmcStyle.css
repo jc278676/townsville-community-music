@@ -17,7 +17,7 @@ height: 500px;
 width: 100%;
 position: absolute;
 background: #8CD8D2;
-margin-top: 115px;
+margin-top: 145px;
 height: 250px;
 }
 .header{
@@ -89,11 +89,9 @@ padding: 0 px !important;
 }
 .center {
 float: left;
-font-weight: bolder;
-font-size: 200%;
-width: 100%;
 text-decoration: none;
 color: black;
+text-align: left;
 }
 .currentHeaderSection{
 display: inline;
@@ -109,7 +107,7 @@ float: left;
 position: relative;
 width: 880px;
 margin-right: 10px;
-padding-bottom: 100px;
+paddign-bottom: 100px;
 text-align: left;
 border-radius: 15px;
 }
@@ -132,17 +130,12 @@ padding-left: 10px;
 }
 #artistList li {
 padding: 5px;
-font-weight:normal;
-}
-#artistList a {
-font-weight: bold;
-color:black;
 }
 .artist {
 float: left;
 padding-top: 20px;
 padding-right: 10px;
-padding-bottom: 100px;
+paddign-bottom: 100px;
 text-align: left;
 border-radius: 15px;
 padding-left: 10px;
@@ -152,17 +145,21 @@ background: #5C5C5C;
 list-style: none;
 text-align: left;
 background: #cecece;
-margin-left:5px;
-margin-right: 5px;
-border-radius: 10px;
 }
+ .center img{
+       float: left;
+       clear: left;
+	   overflow: hidden;
+ }
+ .center a {
+	 margin-top:40px;
+ }
 #artistList a {
 color: black;
 text-decoration: none;
 }
 #artistList li:hover{
 background: #A8C1C5;
-border-radius: 10px;
 }
 .featureArtist {
 background-color: white;
@@ -183,7 +180,7 @@ font-weight: bolder;
 float: left;
 padding-top: 20px;
 padding-right: 10px;
-padding-bottom: 100px;
+paddign-bottom: 100px;
 text-align: left;
 border-radius: 15px;
 padding-left: 10px;
@@ -282,7 +279,8 @@ margin-right: 40px;
 .tickets {
 	width: 300px;
 	float: right;
-    text-align: center;
+	marign-top: 80px;
+	text-align: center;
     font-size: 150%;
     font-weight: 900;
     color: white;
@@ -303,5 +301,6 @@ margin-right: 40px;
     font-size: 150%;
     font-weight: 900;
 }
-    
-    
+.center p{
+	float:left;
+}
